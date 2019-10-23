@@ -11,6 +11,10 @@ public class Login : MonoBehaviour
 
     public Button loginButton;
 
+    public GameObject loginPanel;
+    public GameObject alertCanvas;
+    public Text alertPanelText;
+
     [System.Obsolete]
     public void CallLogin()
     {
@@ -29,7 +33,8 @@ public class Login : MonoBehaviour
 
         if(www.error != null)
         {
-            Debug.Log("Unable to Connect!");
+            alertPanelText.text = "Please check your connection";
+            alertCanvas.SetActive(true);
         }
         else
         {
@@ -39,8 +44,9 @@ public class Login : MonoBehaviour
                 SceneManager.LoadScene(1);
             }
             else
-            {
-                Debug.Log("Login Failed" + www.text);
+            {                
+                alertPanelText.text = www.text;
+                alertCanvas.SetActive(true);
             }
         }        
 
@@ -49,5 +55,10 @@ public class Login : MonoBehaviour
     public void VerifyInputs()
     {
         loginButton.interactable = (emailField.text.Length >= 8 && passwordField.text.Length >= 8);
+    }
+
+    public void OnClickRegister()
+    {
+        Application.OpenURL("www.google.lk");
     }
 }

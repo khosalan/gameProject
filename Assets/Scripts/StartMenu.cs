@@ -14,11 +14,12 @@ public class StartMenu : MonoBehaviour
     {
         if (DBManager.LoggedIn)
         {
-            playerName.text = "Hi " + DBManager.userName.ToUpper() + " !";
+            playerName.text = DBManager.userName.ToUpper();
         }
         else
         {
-            SceneManager.LoadScene(0);
+            playerName.text = DBManager.userName.ToUpper();
+            //SceneManager.LoadScene(0);
         }
     }
 
@@ -28,5 +29,14 @@ public class StartMenu : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    
+    public void PressExit()
+    {
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #else
+		Application.Quit();
+        #endif
+    }
+
+
 }
