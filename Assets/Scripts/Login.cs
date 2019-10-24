@@ -33,6 +33,7 @@ public class Login : MonoBehaviour
 
         if(www.error != null)
         {
+            FindObjectOfType<AudioManager>().Play("Alertbox");
             alertPanelText.text = "Please check your connection";
             alertCanvas.SetActive(true);
         }
@@ -44,7 +45,8 @@ public class Login : MonoBehaviour
                 SceneManager.LoadScene(1);
             }
             else
-            {                
+            {
+                FindObjectOfType<AudioManager>().Play("Alertbox");
                 alertPanelText.text = www.text;
                 alertCanvas.SetActive(true);
             }
