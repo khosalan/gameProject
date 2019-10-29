@@ -9,6 +9,7 @@ public class OptionMenu : MonoBehaviour
     public AudioMixer audiomixer;
     public Slider volumeSlider;
     public GameObject fullScreenOffSlider;
+    public GameObject fullScreenOnSlider;
 
     public Dropdown resolutionDropdown;
     Resolution[] resolutions;
@@ -19,6 +20,12 @@ public class OptionMenu : MonoBehaviour
         if (!Screen.fullScreen)
         {
             fullScreenOffSlider.SetActive(true);
+            fullScreenOnSlider.SetActive(false);
+        }
+        else
+        {
+            fullScreenOffSlider.SetActive(false);
+            fullScreenOnSlider.SetActive(true);
         }
         resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
