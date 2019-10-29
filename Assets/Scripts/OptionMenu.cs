@@ -8,13 +8,18 @@ public class OptionMenu : MonoBehaviour
 {
     public AudioMixer audiomixer;
     public Slider volumeSlider;
+    public GameObject fullScreenOffSlider;
 
     public Dropdown resolutionDropdown;
     Resolution[] resolutions;
     
 
-    /*void Start()
+    void Start()
     {
+        if (!Screen.fullScreen)
+        {
+            fullScreenOffSlider.SetActive(true);
+        }
         resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
 
@@ -30,18 +35,18 @@ public class OptionMenu : MonoBehaviour
             if(resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
             {
                 currentResolutionIndex = i;
-                Debug.Log(currentResolutionIndex);
+                //Debug.Log(currentResolutionIndex);
             }
         }
 
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
-    }*/
+    }
 
     public void SetVolume(float volume)
     {
-        audiomixer.SetFloat("volume", volumeSlider.value);
+        audiomixer.SetFloat("volume", volume);
     }
 
     public void MuteOn()
@@ -59,10 +64,10 @@ public class OptionMenu : MonoBehaviour
         Screen.fullScreen = isFullScreen;
     }
 
-    /*public void SetResolution(int resolutionIndex)
+    public void SetResolution(int resolutionIndex)
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
         Debug.Log(resolutionIndex);
-    }*/
+    }
 }
