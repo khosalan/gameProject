@@ -1,8 +1,6 @@
 # gameProject
 Ucsc 2nd year group project
 
-Required Assets
-  Use fantasy Wooden GUI
-
 Need to work on menuScene (play game, options,and profile view)
-Need to work on audio scripts
+Worked on audio scripts but, Need some changes in the script(Audio restart problem)
+And having some resolution problem in the part which have been done aleady
