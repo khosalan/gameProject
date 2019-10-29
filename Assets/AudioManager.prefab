@@ -46,21 +46,21 @@ MonoBehaviour:
   sounds:
   - name: ButtonHover
     clip: {fileID: 8300000, guid: a1cdc31bb8587954ab92e4877dc66c8e, type: 3}
-    output: {fileID: 0}
+    output: {fileID: 24300002, guid: dc77121abc21d564baa63100b9a3c9e8, type: 2}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Alertbox
     clip: {fileID: 8300000, guid: cbbeaef981adae94f9510cb0fd24f538, type: 3}
-    output: {fileID: 0}
+    output: {fileID: 24300002, guid: dc77121abc21d564baa63100b9a3c9e8, type: 2}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: ButtonClick
     clip: {fileID: 8300000, guid: 075ae6a3ebc133c4882e98715cfa68dc, type: 3}
-    output: {fileID: 0}
+    output: {fileID: 24300002, guid: dc77121abc21d564baa63100b9a3c9e8, type: 2}
     volume: 1
     pitch: 1
     loop: 0

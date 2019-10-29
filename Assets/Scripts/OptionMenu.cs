@@ -6,10 +6,12 @@ using UnityEngine.UI;
 
 public class OptionMenu : MonoBehaviour
 {
-    public AudioMixer audiomixer;
+    public AudioMixer backgroundAudioMixer;
+    public AudioMixer soundEffectAudioMixer;
     public Slider volumeSlider;
+
     public GameObject fullScreenOffSlider;
-    public GameObject fullScreenOnSlider;
+    public GameObject fullScreenOnSlider;    
 
     public Dropdown resolutionDropdown;
     Resolution[] resolutions;
@@ -49,21 +51,22 @@ public class OptionMenu : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+        
     }
 
     public void SetVolume(float volume)
     {
-        audiomixer.SetFloat("volume", volume);
+        backgroundAudioMixer.SetFloat("volume", volume);
     }
 
     public void MuteOn()
     {
-        audiomixer.SetFloat("volume", -80);
+        backgroundAudioMixer.SetFloat("volume", -80);
     }
 
     public void MuteOff()
     {
-        audiomixer.SetFloat("volume", volumeSlider.value);
+        backgroundAudioMixer.SetFloat("volume", volumeSlider.value);
     }
 
     public void SetFullScreen(bool isFullScreen)
@@ -76,5 +79,15 @@ public class OptionMenu : MonoBehaviour
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
         Debug.Log(resolutionIndex);
+    }
+
+    public void SoundEffectOn()
+    {
+        soundEffectAudioMixer.SetFloat("Volume", 10);
+    }
+
+    public void SoundEffectOff()
+    {
+        soundEffectAudioMixer.SetFloat("Volume", -80);
     }
 }
