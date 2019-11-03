@@ -43,8 +43,7 @@ public class OptionMenu : MonoBehaviour
 
             if(resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
             {
-                currentResolutionIndex = i;
-                //Debug.Log(currentResolutionIndex);
+                currentResolutionIndex = i;                
             }
         }
 
@@ -77,8 +76,7 @@ public class OptionMenu : MonoBehaviour
     public void SetResolution(int resolutionIndex)
     {
         Resolution resolution = resolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
-        Debug.Log(resolutionIndex);
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);        
     }
 
     public void SoundEffectOn()

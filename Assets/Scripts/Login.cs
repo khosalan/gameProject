@@ -4,8 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class Login : MonoBehaviour
 {
+
     public InputField emailField;
     public InputField passwordField;
 
@@ -14,6 +16,29 @@ public class Login : MonoBehaviour
     public GameObject loginPanel;
     public GameObject alertCanvas;
     public Text alertPanelText;
+
+    [System.Obsolete]
+    private void Start()
+    {
+        //Debug.Log("hi");
+        PlayerData data = SavePlayerData.LoadPlayerLogin();
+        if (data != null)
+        {
+            emailField.text = data.email;
+            passwordField.text = data.password;
+            StartCoroutine(WaitTime());
+            
+        }              
+    }
+
+    [System.Obsolete]
+    IEnumerator WaitTime()
+    {
+        yield return new WaitForSeconds(1);
+        CallLogin();
+    }
+
+    
 
     [System.Obsolete]
     public void CallLogin()
@@ -41,6 +66,7 @@ public class Login : MonoBehaviour
         {
             if (www.text[0] == '0')
             {
+                SavePlayerData.SavePlayerLogin(this);
                 DBManager.userName = www.text.Split('\t')[1];
                 SceneManager.LoadScene(1);
             }
@@ -63,4 +89,10 @@ public class Login : MonoBehaviour
     {
         Application.OpenURL("www.google.lk");
     }
+
+    public void OnClickForgotPassword()
+    {
+        Application.OpenURL("www.google.lk");
+    }
+
 }

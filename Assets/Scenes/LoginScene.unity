@@ -3803,7 +3803,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1354797548}
-        m_MethodName: OnClickRegister
+        m_MethodName: OnClickForgotPassword
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -18,7 +18,7 @@ public class StartMenu : MonoBehaviour
         }
         else
         {
-            playerName.text = DBManager.userName.ToUpper();
+            playerName.text = DBManager.userName.ToUpper(); //remove this after completion of the project
             //SceneManager.LoadScene(0);
         }
     }

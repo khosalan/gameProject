@@ -25,7 +25,7 @@ public class LevelLoader : MonoBehaviour
             float progress = Mathf.Clamp01(operation.progress / .9f);
 
             slider.value = progress;
-            progreeText.text = progress * 100f + "%";
+            progreeText.text = Mathf.RoundToInt(progress * 100f) + "%";
 
             yield return null;
            
