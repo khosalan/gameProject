@@ -70,5 +70,5 @@ MonoBehaviour:
     output: {fileID: 24300002, guid: a278e81a986283045ba5af2c9aa8459d, type: 2}
     volume: 0.39
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}

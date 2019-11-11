@@ -63,8 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PlayerData.cs" />
-    <Compile Include="Assets\SavePlayerData.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Audio\Sound.cs" />
     <Compile Include="Assets\Scripts\DBManager.cs" />
@@ -72,6 +70,8 @@
     <Compile Include="Assets\Scripts\Login.cs" />
     <Compile Include="Assets\Scripts\OptionMenu.cs" />
     <Compile Include="Assets\Scripts\Registration.cs" />
+    <Compile Include="Assets\Scripts\Save\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\Save\SavePlayerData.cs" />
     <Compile Include="Assets\Scripts\StartMenu.cs" />
     <Compile Include="Assets\Scripts\TabSpace.cs" />
     <None Include="Assets\Fonts\KGFonts-TOU.txt" />

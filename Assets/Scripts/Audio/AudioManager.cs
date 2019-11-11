@@ -6,8 +6,11 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
 
+    public static AudioManager instance;
+
     void Awake()
     {
+        
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();

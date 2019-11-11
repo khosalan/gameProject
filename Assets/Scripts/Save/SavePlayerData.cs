@@ -9,8 +9,8 @@ public static class SavePlayerData
     public static void SavePlayerLogin(Login login)
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/player.vita"; //path depends on OS, so used application.persistentPath which gets a path from a data diredctory on OS
-        FileStream stream = new FileStream(path,FileMode.OpenOrCreate); //to work with file        
+        string path = Application.persistentDataPath + "/player.vita"; //path depends on OS, so used Application.persistentDataPath which gets a path from a data diredctory on OS
+        FileStream stream = new FileStream(path,FileMode.Create); //to work with file        
 
         PlayerData data = new PlayerData(login);
 
