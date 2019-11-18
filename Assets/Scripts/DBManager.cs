@@ -5,6 +5,7 @@ using UnityEngine;
 public static class DBManager 
 {
     public static string userName;
+    public static int playerID;
 
     public static bool LoggedIn { get { return userName != null; } }
 

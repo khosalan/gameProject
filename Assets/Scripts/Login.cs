@@ -19,15 +19,13 @@ public class Login : MonoBehaviour
 
     [System.Obsolete]
     private void Start()
-    {
-        //Debug.Log("hi");
+    {        
         PlayerData data = SavePlayerData.LoadPlayerLogin();
         if (data != null)
         {
             emailField.text = data.email;
             passwordField.text = data.password;
-            StartCoroutine(WaitTime());
-            
+            StartCoroutine(WaitTime());            
         }              
     }
 
@@ -37,7 +35,6 @@ public class Login : MonoBehaviour
         yield return new WaitForSeconds(1);
         CallLogin();
     }
-
     
 
     [System.Obsolete]
@@ -51,9 +48,10 @@ public class Login : MonoBehaviour
     {
         WWWForm form = new WWWForm();        
         form.AddField("email", emailField.text);
-        form.AddField("password", passwordField.text);
+        form.AddField("password", passwordField.text);        
 
         WWW www = new WWW("http://localhost/gameProjSample/login.php", form);
+        
         yield return www;
 
         if(www.error != null)
@@ -68,6 +66,7 @@ public class Login : MonoBehaviour
             {
                 SavePlayerData.SavePlayerLogin(this);
                 DBManager.userName = www.text.Split('\t')[1];
+                                
                 SceneManager.LoadScene(1);
             }
             else

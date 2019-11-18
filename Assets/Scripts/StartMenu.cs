@@ -7,21 +7,26 @@ using UnityEngine.SceneManagement;
 public class StartMenu : MonoBehaviour
 {
 
-    public Text playerName;
+    public Text playerName;    
+    
 
     // Start is called before the first frame update
     void Start()
     {
         if (DBManager.LoggedIn)
         {
-            playerName.text = DBManager.userName.ToUpper();
+            playerName.text = DBManager.userName.ToUpper();               
+            
         }
         else
         {
-            playerName.text = DBManager.userName.ToUpper(); //remove this after completion of the project
+            //playerName.text = DBManager.userName.ToUpper(); //remove this after completion of the project
             //SceneManager.LoadScene(0);
-        }
+            Debug.Log("in else");
+        }        
     }
+        
+    
 
     public void PressLogout()
     {
