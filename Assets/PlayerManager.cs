@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -69,5 +71,27 @@ public class PlayerManager : MonoBehaviour
             //content.GetComponent<Text>().text = "";
         }
 
+    }
+
+    public void DeletePlayerData()
+    {
+        string path = Application.persistentDataPath + "/player.vita";
+        if (File.Exists(path))
+        {
+            File.Delete(path);
+            DBManager.LogOut();
+            //SceneManager.LoadScene(0);
+            StartCoroutine(LoadLogin());
+        }
+        else
+        {
+            Debug.Log("File not found in path " + path);
+        }       
+    }
+
+    IEnumerator LoadLogin()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(0);
     }
 }
