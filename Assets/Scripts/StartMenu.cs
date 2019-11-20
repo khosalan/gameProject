@@ -7,9 +7,12 @@ using UnityEngine.SceneManagement;
 public class StartMenu : MonoBehaviour
 {
 
-    public Text playerName;    
+    public Text playerName;
+    public GameObject menuCanvas;
+    public GameObject playerCanvas;
+    public GameObject profilePanel;
+    public GameObject evaluationPanel;
     
-
     // Start is called before the first frame update
     void Start()
     {
@@ -20,19 +23,19 @@ public class StartMenu : MonoBehaviour
         }
         else
         {
-            //playerName.text = DBManager.userName.ToUpper(); //remove this after completion of the project
-            //SceneManager.LoadScene(0);
-            Debug.Log("in else");
+            playerName.text = "Hello"; //remove this after completion of the project
+            //SceneManager.LoadScene(0);            
         }        
     }
-        
-    
 
-    public void PressLogout()
+    public void OnClickPlayerLogo()
     {
-        //DBManager.LogOut();
-        SceneManager.LoadScene(0);
+        menuCanvas.SetActive(false);
+        playerCanvas.SetActive(true);
+        profilePanel.SetActive(true);
+        evaluationPanel.SetActive(false);
     }
+
 
     public void PressExit()
     {
