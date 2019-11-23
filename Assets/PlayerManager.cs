@@ -7,10 +7,40 @@ using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
+    //Variables used in top panel
+    public Button profileButton;
+    public Button evaluationButton;
+    public GameObject profilePanel;
+    public GameObject evaluationPanel;
+    public GameObject playerCanvas;
+
+    //Variables used for the evaluation
     public GameObject content;
     public Button[] scenarioButtons;
-    public GameObject[] selectionPanel;    
+    public GameObject[] selectionPanel;
+    
+    public void OnClickProfile()
+    {
+        profileButton.GetComponent<Image>().color = Color.red;
+        evaluationButton.GetComponent<Image>().color = Color.white;
 
+        profilePanel.SetActive(true);
+        evaluationPanel.SetActive(false);
+    }
+
+    //While clicking the evaluation button need to display the evaluation of level 1 of scenario 1 under resultsPanel
+    public void OnCLickEvaluation()
+    {
+        profileButton.GetComponent<Image>().color = Color.white;
+        evaluationButton.GetComponent<Image>().color = Color.red;
+
+        profilePanel.SetActive(false);
+        evaluationPanel.SetActive(true);
+
+        playerCanvas.GetComponent<PlayerManager>().ColorChange(0);
+    }
+
+    //Change the colour of the selected button in scenario and to display the evaluation of level 1 in each scenario. 
     public void ColorChange(int id)
     {        
         for (int i = 0; i < scenarioButtons.Length; i++)
@@ -29,7 +59,8 @@ public class PlayerManager : MonoBehaviour
         }
     }
     
-
+    /* When clicking the logout button need to delete the player credentials which were save locally while logging in. 
+     * Then navigate to the login scene.  */
     public void DeletePlayerData()
     {
         string path = Application.persistentDataPath + "/player.vita";

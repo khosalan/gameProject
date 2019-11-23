@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*Script to get the evaluation for each level in evey scenario and save it locally in saveEvaluation array. 
+  This script will run only once while entering the player canvas. */  
+
 public class Evaluation : MonoBehaviour
 {    
-    public SaveEvaluation[] saveEvaluation;
-    public GameObject playerCanvas;
+    public SaveEvaluation[] saveEvaluation;    
 
     [System.Obsolete]
     private void Start()
@@ -26,27 +28,20 @@ public class Evaluation : MonoBehaviour
 
         WWW saveDetail = new WWW("http://localhost/gameProjSample/" + dBFileName + ".php", form);
         yield return saveDetail;
-        int noOfLevels;
 
         if (saveDetail.text[0] == '0')
         {
-            int.TryParse(saveDetail.text.Split('\t')[1], out noOfLevels);            
+            int.TryParse(saveDetail.text.Split('\t')[1], out int noOfLevels); //to convert string to int, as variable passed from dBFile is string
 
             for (int j = 0; j < noOfLevels; j++)
             {
-                saveEvaluation[i].levelEvaluation[j] = saveDetail.text.Split('\t')[j + 2];
+                saveEvaluation[i].levelEvaluation[j] = saveDetail.text.Split('\t')[j + 2]; //0th and 1st index already occupied
                 //Debug.Log(saveEvaluation[i].levelEvaluation[j]);
-            }            
+            }
         }
         else
         {
             Debug.Log(saveDetail.text);
         }
     }
-    
-    public void OnCLickEvaluation()
-    {
-        playerCanvas.GetComponent<PlayerManager>().ColorChange(0);
-    }
-
 }

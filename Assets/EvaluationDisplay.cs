@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/* This script is under selectionPanel of each scenarios.
+ * For every level button under selecionPanel the ColorChange function will get executed while cilcking the button */
 public class EvaluationDisplay : MonoBehaviour
 {
     public int scenarioID;
 
     public GameObject content;
     public GameObject playerCanvas;
-    public Button[] levels;   
-
+    public Button[] levels;
+    
+    //change color of selected button and to display the corresponding evaluation for that level
     public void ColorChange(int buttonId)
     {
         for (int i = 0; i < levels.Length; i++)
@@ -23,11 +26,5 @@ public class EvaluationDisplay : MonoBehaviour
             else
                 levels[i].GetComponent<Image>().color = Color.white;
         }
-    }
-
-    /*public void DisplayResult(int buttonId)
-    {
-        content.GetComponent<Text>().text = playerLogo.GetComponentInChildren<Evaluation>().saveEvaluation[0].levelEvaluation[buttonId];
-        //Debug.Log(playerLogo.GetComponentInChildren<Evaluation>().saveEvaluation[1].levelEvaluation[1]);
-    }*/
+    }    
 }

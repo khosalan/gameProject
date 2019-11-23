@@ -67,6 +67,7 @@
     <Compile Include="Assets\EvaluationDisplay.cs" />
     <Compile Include="Assets\ImageZoom.cs" />
     <Compile Include="Assets\PlayerManager.cs" />
+    <Compile Include="Assets\Profile.cs" />
     <Compile Include="Assets\SaveEvaluation.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Audio\Sound.cs" />
