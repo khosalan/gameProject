@@ -53,7 +53,7 @@ public class PlayerManager : MonoBehaviour
             }
             else
             {
-                scenarioButtons[i].GetComponent<Image>().color = Color.white;
+                scenarioButtons[i].GetComponent<Image>().color = new Color(103f/255f, 118f/255f, 91f/255f);
                 selectionPanel[i].SetActive(false);
             }
         }

@@ -20,11 +20,11 @@ public class EvaluationDisplay : MonoBehaviour
         {
             if (i == buttonId)
             {
-                levels[i].GetComponent<Image>().color = Color.red;
-                content.GetComponent<Text>().text = playerCanvas.GetComponent<Evaluation>().saveEvaluation[scenarioID].levelEvaluation[buttonId];                
+                levels[i].GetComponentInChildren<Text>().GetComponent<Text>().color = new Color(255f / 255f, 102f / 255f, 102f / 255f);
+                content.GetComponent<Text>().text = playerCanvas.GetComponent<Evaluation>().saveEvaluation[scenarioID].levelEvaluation[buttonId];
             }
             else
-                levels[i].GetComponent<Image>().color = Color.white;
+                levels[i].GetComponentInChildren<Text>().GetComponent<Text>().color = new Color(255f / 255f, 227f / 255f, 0f / 255f);
         }
     }    
 }
