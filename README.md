@@ -1,6 +1,7 @@
 # gameProject
 Ucsc 2nd year group project
 
+
 Use unity version 2019.2.10f
 Required Assets
   Ink
@@ -18,5 +19,7 @@ Need to do
   Include preprocessor in ink scripts to change images, sounds,etc
   Write the preprocessor functions in unity  
   Game save 
+  shuold give some touch on intro scene
+  have to gain some images for the gameplay 
 
 
