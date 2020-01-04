@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2511359636325038601}
   - component: {fileID: 2511359636325038615}
   - component: {fileID: 2511359636325038600}
+  - component: {fileID: 8495983752460913660}
   m_Layer: 5
   m_Name: StoryText
   m_TagString: Untagged
@@ -68,14 +69,33 @@ MonoBehaviour:
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
+    m_MinSize: 15
+    m_MaxSize: 25
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue nibh
-    at est consequat lacinia. In tincidunt enim sagittis venenatis mollis. Curabitur
-    odio lectus
+  m_Text: <b>Lorem </b>ipsum dolor sit amet, consectetur <size=34>adipiscing</size>
+    elit. Nunc congue nibh at est consequat lacinia. In tincidunt enim sagittis venenatis
+    mollis. Curabitur odio lectus
+--- !u!95 &8495983752460913660
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2511359636325038602}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5eda2a3684627184fa2f59419af24ee3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

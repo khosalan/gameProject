@@ -12,6 +12,7 @@ public class InkStoryManager : MonoBehaviour
     public DialogView dialogView;
 
     private Story story;
+    private Dictionary<string, System.Action<string>> tagProcessors = new Dictionary<string, System.Action<string>>();
 
     public void StartStory()
     {
@@ -21,7 +22,7 @@ public class InkStoryManager : MonoBehaviour
 
     public void ContinueStory()
     {
-        dialogView.ClearPanel();
+        dialogView.ClearPanel();        
         string text = story.Continue().Trim();
         dialogView.SetStoryText(text);
 
@@ -45,7 +46,7 @@ public class InkStoryManager : MonoBehaviour
                 ContinueStory();
             }, TextAnchor.LowerRight);
         }
-
+        ProcessTags(story.currentTags);
         dialogView.DisplayPanel();
     }
 
@@ -53,5 +54,26 @@ public class InkStoryManager : MonoBehaviour
     {
         story.ChooseChoiceIndex(choiceIndex);
         ContinueStory();
+    }
+
+    public void AddTagProcessor(string tag, System.Action<string> onTag)
+    {
+        tagProcessors.Add(tag, onTag);
+    }
+
+    public void ProcessTags(List<string> tags)
+    {
+        if (tags == null) return;
+        System.Action<string> processor;
+        foreach (string tag in tags)
+        {
+            Debug.Log(tag);
+            string keyOfTag = tag.Split(':')[0];
+            if (tagProcessors.TryGetValue(keyOfTag, out processor))
+            {
+                string valueOfTag = tag.Split(':')[1];
+                processor.Invoke(valueOfTag);
+            }
+        }
     }
 }

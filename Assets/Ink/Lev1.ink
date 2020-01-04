@@ -1,10 +1,13 @@
 ->start
 === start
-One day all of a sudden all of a sudden, all the first years are taken to the auditorium for a compulsory meeting. 
+#title
+
+One day all of a sudden all of a sudden, all the first years are taken to the auditorium for a compulsory meeting. #background:a
+#background:b
 You remember that there were some lab sheets due next weekend and has to make the decision to either
 
  
-*[Stay for the meeting and see what it is about since there is plenty of time to do the lab sheet]
+*[Stay for the meeting and see what it is about since there is plenty of time to do the lab sheet]#background:a
     The meeting is about to start and you are in the auditorium with your friends and the meeting starts. 
     Some senior students come on to the stage and starts talking to
     your batch. 
@@ -37,7 +40,7 @@ You remember that there were some lab sheets due next weekend and has to make th
     
     
 
-
+#background:b
 ===takePart
  *Take part in the event and manage your academic studies
 *Tell them no
