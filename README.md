@@ -1,6 +1,7 @@
 # gameProject
 Ucsc 2nd year group project
 
+Aspect ratio for the game is 16:9
 
 Use unity version 2019.2.10f
 Required Assets
@@ -19,7 +20,8 @@ Need to do
   Include preprocessor in ink scripts to change images, sounds,etc
   Write the preprocessor functions in unity  
   Game save 
-  shuold give some touch on intro scene
-  have to gain some images for the gameplay 
-
+  Shuold give some touch on intro scene
+  Need to write the intro text
+  Have to gain some images for the gameplay 
+  Need to write intro about the scenario to display when clicking the level 
 
