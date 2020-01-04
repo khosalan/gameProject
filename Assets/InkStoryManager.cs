@@ -12,6 +12,7 @@ public class InkStoryManager : MonoBehaviour
     public DialogView dialogView;
 
     private Story story;
+    //Holds the tags in ink file 
     private Dictionary<string, System.Action<string>> tagProcessors = new Dictionary<string, System.Action<string>>();
 
     public void StartStory()
@@ -22,10 +23,11 @@ public class InkStoryManager : MonoBehaviour
 
     public void ContinueStory()
     {
-        dialogView.ClearPanel();        
+        dialogView.ClearPanel();    //First removes all the child objects in DialogPanel, means all the previous StoryText and ChoiceButton    
         string text = story.Continue().Trim();
-        dialogView.SetStoryText(text);
+        dialogView.SetStoryText(text);      //Set the text for StoryText  
 
+        //If the choice exist for the current story 
         if (story.currentChoices.Count > 0)
         {
             for (int i = 0; i < story.currentChoices.Count; i++)
