@@ -6,9 +6,12 @@ public class Intro : MonoBehaviour
 {
     public GameObject loginCanvas;
     public GameObject introCanvas;
-    public void hideIntro()
+    private void Update()
     {
-        loginCanvas.SetActive(true);
-        introCanvas.SetActive(false);
-    }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            loginCanvas.SetActive(true);
+            introCanvas.SetActive(false);
+        }        
+    }    
 }

@@ -2163,7 +2163,7 @@ GameObject:
   - component: {fileID: 953804113}
   - component: {fileID: 953804112}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Logo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2183,10 +2183,10 @@ RectTransform:
   m_Father: {fileID: 1615867587}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0000030397887, y: -149.95001}
-  m_SizeDelta: {x: 291.8, y: 299.90002}
+  m_AnchorMin: {x: 0.38777778, y: 0.595}
+  m_AnchorMax: {x: 0.6166667, y: 1}
+  m_AnchoredPosition: {x: -2, y: -47.450012}
+  m_SizeDelta: {x: 73.70001, y: 58.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &953804112
 MonoBehaviour:
@@ -3564,8 +3564,8 @@ GameObject:
   - component: {fileID: 1615867584}
   - component: {fileID: 1615867583}
   - component: {fileID: 1615867582}
-  - component: {fileID: 1615867581}
   - component: {fileID: 1615867588}
+  - component: {fileID: 1615867589}
   m_Layer: 5
   m_Name: Intro
   m_TagString: Untagged
@@ -3573,34 +3573,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1615867581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1615867580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1615867588}
-          m_MethodName: hideIntro
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &1615867582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3733,6 +3705,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loginCanvas: {fileID: 1801086257}
   introCanvas: {fileID: 1615867580}
+--- !u!95 &1615867589
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615867580}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 00db34e226da6af41b578efaa9d80940, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1625381668
 GameObject:
   m_ObjectHideFlags: 0
@@ -4774,7 +4765,7 @@ GameObject:
   - component: {fileID: 1996033573}
   - component: {fileID: 1996033572}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4794,10 +4785,10 @@ RectTransform:
   m_Father: {fileID: 1615867587}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076293945, y: -108.399994}
-  m_SizeDelta: {x: 579.4, y: 216.8}
+  m_AnchorMin: {x: 0.1522222, y: 0.3}
+  m_AnchorMax: {x: 0.84555566, y: 0.702}
+  m_AnchoredPosition: {x: 1, y: -100.8}
+  m_SizeDelta: {x: 209.40002, y: 18.100006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1996033572
 MonoBehaviour:
@@ -4812,7 +4803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.2741189, g: 0.754717, b: 0.3301791, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4821,8 +4812,8 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 4278d78a7de951f48a462aa5e30f02a4, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 1
+    m_BestFit: 1
+    m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -4830,8 +4821,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Vita is an interactive game that allows the player to answer questions based
-    on differerent scenarios tackling the problems that we found in our DaytoDay life.
+  m_Text: 'Vita is an interactive game that allows the player to answer questions
+    based on differerent scenarios tackling the problems that we found in our DaytoDay
+    life.
+
+
+    Vita is an interactive game that allows the player to answer questions based on
+    differerent scenarios tackling the problems that we found in our DaytoDay life.'
 --- !u!222 &1996033573
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5010,7 +5006,7 @@ GameObject:
   - component: {fileID: 2029368671}
   - component: {fileID: 2029368670}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ContinueClick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5032,7 +5028,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 43.850006}
+  m_AnchoredPosition: {x: 0.10892, y: 30}
   m_SizeDelta: {x: 334.9, y: 32.699997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2029368670
@@ -5066,7 +5062,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Click anywhere to continue
+  m_Text: Press spacebar to continue
 --- !u!222 &2029368671
 CanvasRenderer:
   m_ObjectHideFlags: 0
