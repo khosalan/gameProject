@@ -24,4 +24,8 @@ Need to do
   Need to write the intro text
   Have to gain some images for the gameplay 
   Need to write intro about the scenario to display when clicking the level 
+  
+Need to do
+ some kindof animation work for the story
+ evalution part properly
 
