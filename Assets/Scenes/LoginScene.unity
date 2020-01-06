@@ -2183,10 +2183,10 @@ RectTransform:
   m_Father: {fileID: 1615867587}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000012219, y: 178}
-  m_SizeDelta: {x: 291.8, y: 299.9}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -0.0000030397887, y: -149.95001}
+  m_SizeDelta: {x: 291.8, y: 299.90002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &953804112
 MonoBehaviour:
@@ -4796,8 +4796,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: -67.9}
-  m_SizeDelta: {x: 431.3, y: 216.8}
+  m_AnchoredPosition: {x: -0.0000076293945, y: -108.399994}
+  m_SizeDelta: {x: 579.4, y: 216.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1996033572
 MonoBehaviour:
@@ -4819,7 +4819,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4278d78a7de951f48a462aa5e30f02a4, type: 3}
-    m_FontSize: 20
+    m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -4830,10 +4830,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "dvifsdifhkhdfkhskdfksdk ;snfksiehfi skdfbewhfiwef\nwefhjvwejfjwe ewfbbwejfb
-    wefnkwbef \newfjbwjhefb jbjbwef jbjewuf \newfjbweufiwhef jewfuwef khwefih ihewfih
-    \newkfwehgf k fkweh ewfihiwehf \nwjebfwefi kkfew kwhefiwef ihihhihwef kwefihwef\nwebfjjwef
-    knihewf koiwef "
+  m_Text: Vita is an interactive game that allows the player to answer questions based
+    on differerent scenarios tackling the problems that we found in our DaytoDay life.
 --- !u!222 &1996033573
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5032,10 +5030,10 @@ RectTransform:
   m_Father: {fileID: 1615867587}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -292}
-  m_SizeDelta: {x: 334.9, y: 32.7}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 43.850006}
+  m_SizeDelta: {x: 334.9, y: 32.699997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2029368670
 MonoBehaviour:
