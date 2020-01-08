@@ -5,6 +5,9 @@ using UnityEngine;
 public class GamePause : MonoBehaviour
 {
     public InkStoryManager inkStoryManager;
+    public GameObject exitCanvas;
+    public GameObject levelMenu;
+    public GameObject level;
     private bool _isPaused = false;
 
     public void OnClickPauseButton()
@@ -31,5 +34,13 @@ public class GamePause : MonoBehaviour
     {
         OnClickResume();
         inkStoryManager.StartStory();
+    }
+
+    public void OnClickExit()
+    {
+        exitCanvas.SetActive(false);
+        OnClickResume();
+        level.SetActive(false);
+        levelMenu.SetActive(true);
     }
 }

@@ -1302,20 +1302,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2088125044}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 550675394}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1073921818}
+        m_MethodName: OnClickExit
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4922,6 +4911,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inkStoryManager: {fileID: 1124570570}
+  exitCanvas: {fileID: 1620857588}
+  levelMenu: {fileID: 2088125044}
+  level: {fileID: 550675394}
 --- !u!1 &1089662239
 GameObject:
   m_ObjectHideFlags: 0
