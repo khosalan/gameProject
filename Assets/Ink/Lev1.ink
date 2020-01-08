@@ -8,7 +8,7 @@ You remember that there were some lab sheets due next weekend and has to make th
 
  
 *[Stay for the meeting and see what it is about since there is plenty of time to do the lab sheet]#background:a
-    The meeting is about to start and you are in the auditorium with your friends and the meeting starts. 
+    The meeting is about to start and you are in the auditorium with your friends and the meeting starts. ->DONE
     Some senior students come on to the stage and starts talking to
     your batch. 
     They explain that each year the university holds a musical event as a

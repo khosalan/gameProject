@@ -15,6 +15,11 @@ public class InkStoryManager : MonoBehaviour
     //Holds the tags in ink file 
     private Dictionary<string, System.Action<string>> tagProcessors = new Dictionary<string, System.Action<string>>();
 
+    public UnityEngine.Events.UnityAction storyEndAction = delegate { };
+
+    public int operation;
+    public int nextLevel;
+
     public void StartStory()
     {
         story = new Story(inkJsonText.text);
@@ -38,10 +43,10 @@ public class InkStoryManager : MonoBehaviour
                 });
             }
         }
-        /*else if (isEnded())
+        else if (IsEnded())
         {
-            dialogView.AddChoice("●", storyEndAction, TextAnchor.LowerRight);
-        }*/
+            StartCoroutine(GoRemarks(text));            
+        }
         else
         {
             dialogView.AddChoice("▼", delegate {
@@ -50,12 +55,28 @@ public class InkStoryManager : MonoBehaviour
         }
         ProcessTags(story.currentTags);
         dialogView.DisplayPanel();
+    }    
+
+    IEnumerator GoRemarks(string text)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("operation", operation);
+        form.AddField("currentRemark", text);
+
+        WWW www = new WWW("http://localhost/gameProjSample/evaluation.php", form);
+        yield return www;
+        dialogView.AddChoice("●", storyEndAction, TextAnchor.LowerRight);
     }
 
     public void Continue(int choiceIndex)
     {
         story.ChooseChoiceIndex(choiceIndex);
         ContinueStory();
+    }
+
+    public bool IsEnded()
+    {
+        return this.story.currentChoices.Count == 0 && !this.story.canContinue;
     }
 
     public void AddTagProcessor(string tag, System.Action<string> onTag)

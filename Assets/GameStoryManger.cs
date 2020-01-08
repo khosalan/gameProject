@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameStoryManger : MonoBehaviour
 {
@@ -16,6 +17,11 @@ public class GameStoryManger : MonoBehaviour
         inkStoryManager.AddTagProcessor("background", delegate (string value) {
             SwitchToBackground(value);
         });
+
+        inkStoryManager.storyEndAction = delegate
+        {
+            BackToMenu();
+        };
     }
 
     public void OnClickLevel()
@@ -23,6 +29,12 @@ public class GameStoryManger : MonoBehaviour
         dialogCanvas.SetActive(true);
         homeCanvas.SetActive(false);
         inkStoryManager.StartStory();        
+        
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(3);
         
     }
 
