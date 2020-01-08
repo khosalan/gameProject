@@ -389,7 +389,10 @@ MonoBehaviour:
   inkJsonText: {fileID: 4900000, guid: 7a1f25bbeff431c43a6c71766eaeabf5, type: 3}
   dialogView: {fileID: 538376236}
   operation: 0
+  currentScenario: 0
+  currentLevel: 0
   nextLevel: 0
+  pauseButton: {fileID: 0}
 --- !u!4 &44057592
 Transform:
   m_ObjectHideFlags: 0
@@ -5084,7 +5087,10 @@ MonoBehaviour:
   inkJsonText: {fileID: 4900000, guid: 2475d8c005bcd6e498b8f7176a7d581c, type: 3}
   dialogView: {fileID: 550675402}
   operation: 1
+  currentScenario: 1
+  currentLevel: 1
   nextLevel: 2
+  pauseButton: {fileID: 149400344}
 --- !u!1 &1151495215
 GameObject:
   m_ObjectHideFlags: 0
@@ -5200,7 +5206,10 @@ MonoBehaviour:
   inkJsonText: {fileID: 4900000, guid: 2475d8c005bcd6e498b8f7176a7d581c, type: 3}
   dialogView: {fileID: 623194428}
   operation: 0
+  currentScenario: 0
+  currentLevel: 0
   nextLevel: 0
+  pauseButton: {fileID: 0}
 --- !u!4 &1187102819
 Transform:
   m_ObjectHideFlags: 0

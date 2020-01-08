@@ -34,7 +34,7 @@ public class LevelPlayable : MonoBehaviour
         {
             locked.SetActive(false);
             levelText.SetActive(true);
-            gameObject.GetComponent<Button>().interactable = true; //not working, resolve the button click
+            gameObject.GetComponent<Button>().enabled = true; 
 
         }
     }

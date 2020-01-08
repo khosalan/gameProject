@@ -18,7 +18,11 @@ public class InkStoryManager : MonoBehaviour
     public UnityEngine.Events.UnityAction storyEndAction = delegate { };
 
     public int operation;
+    public int currentScenario;
+    public int currentLevel;
     public int nextLevel;
+
+    public GameObject pauseButton;
 
     public void StartStory()
     {
@@ -45,6 +49,7 @@ public class InkStoryManager : MonoBehaviour
         }
         else if (IsEnded())
         {
+            pauseButton.SetActive(false);
             StartCoroutine(GoRemarks(text));            
         }
         else
@@ -61,10 +66,19 @@ public class InkStoryManager : MonoBehaviour
     {
         WWWForm form = new WWWForm();
         form.AddField("operation", operation);
+        form.AddField("currentScenario", currentScenario);
+        form.AddField("currentLevel", currentLevel);
         form.AddField("currentRemark", text);
+        form.AddField("nextLevel", nextLevel);
 
         WWW www = new WWW("http://localhost/gameProjSample/evaluation.php", form);
         yield return www;
+        /*if (www.text[0] == '0')
+        {
+            Debug.Log(www.text.Split('\t')[1]);
+        }
+        else
+            Debug.Log("else");*/
         dialogView.AddChoice("●", storyEndAction, TextAnchor.LowerRight);
     }
 
