@@ -9,18 +9,23 @@ public class LevelPlayable : MonoBehaviour
     public int level;
     public GameObject locked;
     public GameObject levelText;
+    public GameObject loadingPanel;
+
     private bool isUpdated = false;
 
     // Update is called once per frame
+    [System.Obsolete]
     void Update()
     {
         if(!isUpdated)
         {
+            loadingPanel.SetActive(true);            
             StartCoroutine(CheckPlayable());
             isUpdated = true;
         }
     }
 
+    [System.Obsolete]
     IEnumerator CheckPlayable()
     {
         WWWForm form = new WWWForm();
@@ -34,8 +39,8 @@ public class LevelPlayable : MonoBehaviour
         {
             locked.SetActive(false);
             levelText.SetActive(true);
-            gameObject.GetComponent<Button>().enabled = true; 
-
+            gameObject.GetComponent<Button>().enabled = true;                   
         }
+        loadingPanel.SetActive(false);
     }
 }

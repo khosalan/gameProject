@@ -23,6 +23,7 @@ public class InkStoryManager : MonoBehaviour
     public int nextLevel;
 
     public GameObject pauseButton;
+    public GameObject saveCanvas;
 
     public void StartStory()
     {
@@ -50,6 +51,7 @@ public class InkStoryManager : MonoBehaviour
         else if (IsEnded())
         {
             pauseButton.SetActive(false);
+            saveCanvas.SetActive(true);
             StartCoroutine(GoRemarks(text));            
         }
         else
@@ -79,6 +81,7 @@ public class InkStoryManager : MonoBehaviour
         }
         else
             Debug.Log("else");*/
+        saveCanvas.SetActive(false);
         dialogView.AddChoice("●", storyEndAction, TextAnchor.LowerRight);
     }
 
