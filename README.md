@@ -14,23 +14,15 @@ Most Important
   Need to design the database properly
 
 Need to do
-  Level display for each scenario
-  Ink story end in unity
-  Update the player remarks in DB after finishing up the each level
+  Level display for each scenario - finished for one scenario
+  Update the player remarks in DB after finishing up the each level - about 75%
   Include preprocessor in ink scripts to change images, sounds,etc
-  Write the preprocessor functions in unity   
-  Shuold give some touch on intro scene -still now
+  Write the preprocessor functions in unity     
   Need to write the intro text - still now
   Have to gain some images for the gameplay 
-  Need to write intro about the scenario to display when clicking the level 
-  
-Need to do
- some kindof animation work for the story
- evalution part properly
- 
-Available problems
-  button interact problem in Levels
-  Exiting a Level while finishing
+  Need to write intro about the scenario to display when clicking the scenario 
+  some kindof animation work for the story
+  evalution part properly
   
 Should take care in Evaluation Views
   
