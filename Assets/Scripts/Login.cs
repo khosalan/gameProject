@@ -15,6 +15,9 @@ public class Login : MonoBehaviour
 
     public GameObject loginPanel;
     public GameObject alertCanvas;
+    public GameObject autoLoadingPanel;
+    public GameObject loadingPanel;
+
     public Text alertPanelText;
 
     [System.Obsolete]
@@ -25,6 +28,7 @@ public class Login : MonoBehaviour
         {
             emailField.text = data.email;
             passwordField.text = data.password;
+            autoLoadingPanel.SetActive(true);
             StartCoroutine(WaitTime());            
         }              
     }
@@ -40,6 +44,10 @@ public class Login : MonoBehaviour
     [System.Obsolete]
     public void CallLogin()
     {
+        if (!autoLoadingPanel.active)
+        {
+            loadingPanel.SetActive(true);
+        }
         StartCoroutine(GoLogin());
     }
 
@@ -53,6 +61,8 @@ public class Login : MonoBehaviour
         WWW www = new WWW("http://localhost/gameProjSample/login.php", form);
         
         yield return www;
+        loadingPanel.SetActive(false);
+        autoLoadingPanel.SetActive(false);
 
         if(www.error != null)
         {
