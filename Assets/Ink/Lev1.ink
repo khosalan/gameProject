@@ -1,14 +1,16 @@
 ->start
 === start
 #title
-#background:a
+#background:meeting
 One day all of a sudden, all the first years are taken to the auditorium for a compulsory meeting. 
 #background:b
 You remember that there were some lab sheets due next weekend and has to make the decision to either
 
  
-*[Stay for the meeting and see what it is about since there is plenty of time to do the lab sheet]#background:a
+*[Stay for the meeting and see what it is about since there is plenty of time to do the lab sheet]
+    #background:friends
     The meeting is about to start and you are in the auditorium with your friends and the meeting starts. 
+    #background:musical
     Some senior students come on to the stage and starts talking to your batch. 
     They explain that each year the university holds a musical event as a fundraiser for an annual rehabilitation program of a school in a rural area and,
     they also say that most of the organizing had to be done by the first years since the work piles up for the seniors. 
@@ -18,7 +20,8 @@ You remember that there were some lab sheets due next weekend and has to make th
     
     
 *[Ditch the meeting and go home to do the lab sheets]
-    You go home and finish the lab sheet with plenty of time to spare. The next day you go back to the university and meet your friends. They ask you why you didn't stay for the meeting. You have to decide on
+    You go home and finish the lab sheet with plenty of time to spare. 
+    The next day you go back to the university and meet your friends. They ask you why you didn't stay for the meeting. You have to decide on
     **[Tell the truth]
     **[Lie and tell them you had a family emergency]
     /* - or -- is called a gather it is used to combine both decisions and continue together*/
@@ -26,14 +29,12 @@ You remember that there were some lab sheets due next weekend and has to make th
     They ask if you would like to join the organizing comittee. Now you have to decide
         ->takePart
     
-   
-    
     
 
-#background:b
+
 ===takePart
  *[Take part in the event and manage your academic studies]
-*[Tell them no]
+ *[Tell them no]
     You have chosen not to take part in a extra curricular activity so. for a person to be well balanced they need studies and extra curricular activities.
     ->DONE
 -Then the event planning starts and everything is going smoothly. You are managing you academics well and you’ve been doing the event management work put upon you very well.
@@ -42,6 +43,7 @@ You remember that there were some lab sheets due next weekend and has to make th
 
 ===sceneTwo
 Then the event planning starts and everything is going smoothly. You are managing you academics well and you’ve been doing the event management work put upon you very well.
+#background:lecturersay
 One day one of your lecturers say that there will be an assignment in the following week from what you have learned so far. 
 You and your friends are recapping what you learned so far and you hear that a special meeting is called for the organizing committee members do discuss the progress of the event so far. 
 The meeting started and everything went well. It ends and a senior asks you to stay for a special discussion. You stay after the meeting and talk to the seniors. 
@@ -52,6 +54,7 @@ They also said that they’d prefer if you go and talk. Then you start thinking 
     You go to the company and manage to get a better sponsorship that you thought.
 *[Send someone else to the company and you study for the assignment] 
     The person you sent managed to get the sponsorship.
+ #background:exam
 -The next day you did the assignment and you managed to do very well.
 ->sceneThree
 
