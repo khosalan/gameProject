@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\SaveEvaluation.cs" />
     <Compile Include="Assets\Scripts\StartMenu.cs" />
     <Compile Include="Assets\Scripts\TabSpace.cs" />
+    <Compile Include="Assets\TextType.cs" />
     <None Include="Assets\Fonts\KGFonts-TOU.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/khosa/Desktop/Game project/gameProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

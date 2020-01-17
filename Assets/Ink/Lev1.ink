@@ -20,6 +20,7 @@ You remember that there were some lab sheets due next weekend and has to make th
     
     
 *[Ditch the meeting and go home to do the lab sheets]
+    #background:labsheethome
     You go home and finish the lab sheet with plenty of time to spare. 
     The next day you go back to the university and meet your friends. They ask you why you didn't stay for the meeting. You have to decide on
     **[Tell the truth]
@@ -80,6 +81,7 @@ Since you are incharge for today you have to decide
 -The event went well and the seniors thank you and all of your batchmates on a job well done.
 //(You are awarded a special award based on your past decisions)
 
+#background:travel
 After the event is over you are told that you can go home. You decide to take a cab home since you are tired from all the work. When you go out side the venue you see one of your batch mates looking worried. 
 You have to decide
 
