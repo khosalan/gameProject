@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\AlertMessage.cs" />
     <Compile Include="Assets\BackToMenu.cs" />
+    <Compile Include="Assets\ButtonSound.cs" />
     <Compile Include="Assets\DialogView.cs" />
     <Compile Include="Assets\GamePause.cs" />
     <Compile Include="Assets\GameStoryManger.cs" />

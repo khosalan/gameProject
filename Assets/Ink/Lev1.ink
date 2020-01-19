@@ -11,8 +11,10 @@ You remember that there were some lab sheets due next weekend and has to make th
     #background:friends
     The meeting is about to start and you are in the auditorium with your friends and the meeting starts. 
     #background:senior
-    Some senior students come on to the stage and starts talking to your batch. 
+    Some senior students come on to the stage and starts talking to your batch.
+    #background:musical
     They explain that each year the university holds a musical event as a fundraiser for an annual rehabilitation program of a school in a rural area and,
+    #background:senior
     they also say that most of the organizing had to be done by the first years since the work piles up for the seniors. 
     #background:discussion
     Then meeting ends and you go back to the common area with your friends. 
@@ -31,6 +33,7 @@ You remember that there were some lab sheets due next weekend and has to make th
     --After that you ask your friends what happened in the meeting.
     #background:musical
     They tell you that it was about musical event that the first years has to organize. They tell you how it is done as a fundraiser for a school rehabilitation program. 
+    #background:discussion
     They ask if you would like to join the organizing comittee. Now you have to decide
         ->takePart
     
@@ -42,7 +45,8 @@ You remember that there were some lab sheets due next weekend and has to make th
  *[Tell them no]
     You have chosen not to take part in a extra curricular activity so. for a person to be well balanced they need studies and extra curricular activities.
     ->DONE
--Then the event planning starts and everything is going smoothly. You are managing you academics well and you’ve been doing the event management work put upon you very well.
+-#background:planning
+Then the event planning starts and everything is going smoothly. You are managing you academics well and you’ve been doing the event management work put upon you very well.
 
 ->sceneTwo
 
@@ -99,8 +103,7 @@ He said that he’s feeling a bit under the whether and he went to get some medi
 //(You are awarded a special award based on your past decisions)
 
 #background:travel
-After the event is over you are told that you can go home. You decide to take a cab home since you are tired from all the work. When you go out side the venue you see one of your batch mates looking worried. 
-You have to decide
+After the event is over you are told that you can go home. You decide to take a cab home since you are tired from all the work. When you go out side the venue you see one of your batch mates looking worried. You have to decide
 
 *[Ask that person what’s wrong] 
     Your go home feeling proud of what you and your batchmates did.
@@ -110,6 +113,7 @@ You have to decide
     ->END
     
 ===finale
+#background:onetalkone
 He talled you that he doesn't know this area and how to get back to the hostle. 
 The hostel is on the way to your house. You are thinking 
 *[Tell him the way to get the bus(so that you can peacefully go home because you are tired)]

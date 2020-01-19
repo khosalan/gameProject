@@ -11,6 +11,7 @@ public class GameStoryManger : MonoBehaviour
     public GameObject homeCanvas;
 
     public GameObject backgroundParent;
+    public GameObject levelCanvas;
 
     private void Awake()
     {
@@ -34,7 +35,7 @@ public class GameStoryManger : MonoBehaviour
 
     public void BackToMenu()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(levelCanvas.GetComponent<BackToMenu>().currentScene);
         
     }
 
