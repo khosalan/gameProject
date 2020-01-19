@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BackToMenu : MonoBehaviour
 {
+    public int scenarioID;
     public void OnClickBack()
     {
         SceneManager.LoadScene(2);

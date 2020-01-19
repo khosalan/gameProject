@@ -17,13 +17,14 @@ public class InkStoryManager : MonoBehaviour
 
     public UnityEngine.Events.UnityAction storyEndAction = delegate { };
 
-    public int operation;
-    public int currentScenario;
+    public int operation;    
     public int currentLevel;
     public int nextLevel;
 
+    public GameObject levelCanvas;
     public GameObject pauseButton;
     public GameObject saveCanvas;
+    public GameObject alertCanvas;
 
     public void StartStory()
     {
@@ -62,13 +63,14 @@ public class InkStoryManager : MonoBehaviour
         }
         ProcessTags(story.currentTags);
         dialogView.DisplayPanel();
-    }    
+    }
+    
 
     IEnumerator GoRemarks(string text)
     {
         WWWForm form = new WWWForm();
         form.AddField("operation", operation);
-        form.AddField("currentScenario", currentScenario);
+        form.AddField("currentScenario", levelCanvas.GetComponent<BackToMenu>().scenarioID);
         form.AddField("currentLevel", currentLevel);
         form.AddField("currentRemark", text);
         form.AddField("nextLevel", nextLevel);
@@ -81,8 +83,19 @@ public class InkStoryManager : MonoBehaviour
         }
         else
             Debug.Log("else");*/
-        saveCanvas.SetActive(false);
-        dialogView.AddChoice("●", storyEndAction, TextAnchor.LowerRight);
+        if (www.error != null)
+        {
+            Debug.Log("Connection Error");
+            saveCanvas.SetActive(false);
+            alertCanvas.SetActive(true);
+            alertCanvas.GetComponent<AlertMessage>().remarks = text;            
+        }
+        else
+        {
+            saveCanvas.SetActive(false);
+            dialogView.AddChoice("●", storyEndAction, TextAnchor.LowerRight);
+        }
+        
     }
 
     public void Continue(int choiceIndex)
@@ -115,5 +128,21 @@ public class InkStoryManager : MonoBehaviour
                 processor.Invoke(valueOfTag);
             }
         }
+    }
+
+    public void OnClickRetry()
+    {
+        StartCoroutine(GoRemarks(alertCanvas.GetComponent<AlertMessage>().remarks));
+        alertCanvas.SetActive(false);
+        saveCanvas.SetActive(true);
+    }
+
+    public void OnClickQuit()
+    {
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #else
+		Application.Quit();
+        #endif
     }
 }
