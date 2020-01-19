@@ -14,14 +14,12 @@ Most Important
   Need to design the database properly
 
 Need to do
-  Level display for each scenario - finished for one scenario
-  Update the player remarks in DB after finishing up the each level - about 75%
-  Include preprocessor in ink scripts to change images, sounds,etc
-  Write the preprocessor functions in unity     
+  Level display for each scenario - finished for one scenario  
+  Include preprocessor in ink scripts to change images, sounds,etc - finshed for levels 1,2 in scenario 1     
   Need to write the intro text - still now
   Have to gain some images for the gameplay 
   Need to write intro about the scenario to display when clicking the scenario 
-  some kindof animation work for the story
+  some kindof animation work for the story - finshed for levels 1,2 in scenario 1 
   evalution part properly
   
 Should take care in Evaluation Views
