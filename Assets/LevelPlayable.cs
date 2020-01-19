@@ -4,12 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class LevelPlayable : MonoBehaviour
-{
-    public int scenario;
+{    
     public int level;
+
+    public GameObject levelCanvas;
     public GameObject locked;
     public GameObject levelText;
     public GameObject loadingPanel;
+    public GameObject alertPanel;
 
     private bool isUpdated = false;
 
@@ -29,18 +31,44 @@ public class LevelPlayable : MonoBehaviour
     IEnumerator CheckPlayable()
     {
         WWWForm form = new WWWForm();
-        form.AddField("scenarioID", scenario);
+        form.AddField("scenarioID", levelCanvas.GetComponent<BackToMenu>().scenarioID);
         form.AddField("levelID", level);
 
         WWW www = new WWW("http://localhost/gameProjSample/played.php", form);
         
         yield return www;
-        if (www.text[0] == '1')
+
+        if (www.error != null)
         {
-            locked.SetActive(false);
-            levelText.SetActive(true);
-            gameObject.GetComponent<Button>().enabled = true;                   
+            FindObjectOfType<AudioManager>().Play("Alertbox");
+            alertPanel.SetActive(true);
         }
-        loadingPanel.SetActive(false);
+        else
+        {
+            if (www.text[0] == '1')
+            {
+                locked.SetActive(false);
+                levelText.SetActive(true);
+                gameObject.GetComponent<Button>().enabled = true;
+            }
+            loadingPanel.SetActive(false);
+
+        }
+        
+    }
+
+    public void OnClickRetry()
+    {
+        StartCoroutine(CheckPlayable());
+        alertPanel.SetActive(false);
+    }
+
+    public void OnClickQuit()
+    {
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #else
+		Application.Quit();
+        #endif
     }
 }

@@ -85,8 +85,8 @@ public class InkStoryManager : MonoBehaviour
             Debug.Log("else");*/
         if (www.error != null)
         {
-            Debug.Log("Connection Error");
-            saveCanvas.SetActive(false);
+            Debug.Log("Connection Error");            
+            FindObjectOfType<AudioManager>().Play("Alertbox");
             alertCanvas.SetActive(true);
             alertCanvas.GetComponent<AlertMessage>().remarks = text;            
         }
