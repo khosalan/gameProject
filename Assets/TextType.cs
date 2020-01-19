@@ -18,7 +18,8 @@ public class TextType : MonoBehaviour
         foreach (char letter in storyText.ToCharArray())
         {
             gameObject.GetComponent<Text>().text += letter;
-            yield return new WaitForSeconds(0.02f);
+            FindObjectOfType<AudioManager>().Play("Type");
+            yield return new WaitForSeconds(0.06f);
         }        
     }
     
