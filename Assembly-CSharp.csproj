@@ -72,6 +72,7 @@
     <Compile Include="Assets\InkStoryManager.cs" />
     <Compile Include="Assets\Intro.cs" />
     <Compile Include="Assets\LevelPlayable.cs" />
+    <Compile Include="Assets\RetrieveRemarks.cs" />
     <Compile Include="Assets\SceneSelection.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Audio\Sound.cs" />

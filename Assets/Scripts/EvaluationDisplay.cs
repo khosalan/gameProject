@@ -21,7 +21,7 @@ public class EvaluationDisplay : MonoBehaviour
             if (i == buttonId)
             {
                 levels[i].GetComponentInChildren<Text>().GetComponent<Text>().color = new Color(255f / 255f, 102f / 255f, 102f / 255f);
-                content.GetComponent<Text>().text = playerCanvas.GetComponent<Evaluation>().saveEvaluation[scenarioID].levelEvaluation[buttonId];
+                content.GetComponent<Text>().text = playerCanvas.GetComponent<RetrieveRemarks>().remarks[buttonId];
             }
             else
                 levels[i].GetComponentInChildren<Text>().GetComponent<Text>().color = new Color(255f / 255f, 227f / 255f, 0f / 255f);

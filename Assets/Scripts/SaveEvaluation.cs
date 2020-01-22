@@ -5,7 +5,6 @@ using UnityEngine;
 [System.Serializable]
 public class SaveEvaluation
 {
-    public string scenarioName;
-    public string dBFileName;
+    public string scenarioName;    
     public string[] levelEvaluation;
 }
