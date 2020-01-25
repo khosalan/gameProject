@@ -9,4 +9,9 @@ public class SceneSelection : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+
+    public void OnClickWork()
+    {
+        SceneManager.LoadScene(4);
+    }
 }

@@ -37,7 +37,7 @@ public class PlayerManager : MonoBehaviour
         profilePanel.SetActive(false);
         evaluationPanel.SetActive(true);
 
-        playerCanvas.GetComponent<PlayerManager>().ColorChange(0);
+        ColorChange(0);
     }
 
     //Change the colour of the selected button in scenario and to display the evaluation of level 1 in each scenario. 

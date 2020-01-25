@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/University.unity
     guid: 46639d0b32ed8ed4ba2509ea36393422
+  - enabled: 1
+    path: Assets/Scenes/Work.unity
+    guid: 9a452c0366dd09044928b9ad45b07147
   m_configObjects: {}
