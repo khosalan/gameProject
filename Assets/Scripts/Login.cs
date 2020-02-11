@@ -17,6 +17,7 @@ public class Login : MonoBehaviour
     public GameObject alertCanvas;
     public GameObject autoLoadingPanel;
     public GameObject loadingPanel;
+    public GameObject updateCanvas;
 
     public Text alertPanelText;
 
@@ -29,16 +30,48 @@ public class Login : MonoBehaviour
             emailField.text = data.email;
             passwordField.text = data.password;
             autoLoadingPanel.SetActive(true);
-            StartCoroutine(WaitTime());            
+            StartCoroutine(GetVersion());            
         }              
     }
 
+    //Checking the current version of the game, whether it is the latest version
+
     [System.Obsolete]
+    IEnumerator GetVersion()
+    {
+        WWW www = new WWW("http://localhost/gameProjSample/version.php");
+        yield return www;
+
+        if (www.error != null)
+        {
+            FindObjectOfType<AudioManager>().Play("Alertbox");
+            alertPanelText.text = "Please check your connection";
+            alertCanvas.SetActive(true);
+        }
+        else
+        {
+            if (www.text[0] == '0')
+            {
+                double.TryParse(www.text.Split('\t')[1], out double currentVersion);
+                Debug.Log(currentVersion);
+                if (currentVersion != DBManager.VersionNumber)
+                {
+                    FindObjectOfType<AudioManager>().Play("Alertbox");
+                    updateCanvas.SetActive(true);
+                    yield break;
+                }
+                //yield return StartCoroutine(WaitTime());
+                CallLogin();
+            }
+        }
+    }
+
+    /*[System.Obsolete]
     IEnumerator WaitTime()
     {
         yield return new WaitForSeconds(1);
         CallLogin();
-    }
+    }*/
     
 
     [System.Obsolete]
@@ -102,6 +135,20 @@ public class Login : MonoBehaviour
     public void OnClickForgotPassword()
     {
         Application.OpenURL("www.google.lk");
+    }
+
+    public void OnClickUpdate()
+    {
+        Application.OpenURL("www.google.lk");
+    }
+
+    public void PressExit()
+    {
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #else
+		Application.Quit();
+        #endif
     }
 
 }
