@@ -11048,9 +11048,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inkJsonText: {fileID: 4900000, guid: 8e1203dad3ff0ad419c42b3f7a4cf923, type: 3}
   dialogView: {fileID: 66716126}
-  operation: 1
-  currentLevel: 2
-  nextLevel: 3
+  operation: 3
+  currentLevel: 3
+  nextLevel: 0
   levelCanvas: {fileID: 2088125044}
   pauseButton: {fileID: 4013589}
   saveCanvas: {fileID: 1679688445}
@@ -14423,7 +14423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inkJsonText: {fileID: 4900000, guid: 7a1f25bbeff431c43a6c71766eaeabf5, type: 3}
   dialogView: {fileID: 765824060}
-  operation: 1
+  operation: 2
   currentLevel: 2
   nextLevel: 3
   levelCanvas: {fileID: 2088125044}

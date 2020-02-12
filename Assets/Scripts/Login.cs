@@ -23,15 +23,8 @@ public class Login : MonoBehaviour
 
     [System.Obsolete]
     private void Start()
-    {        
-        PlayerData data = SavePlayerData.LoadPlayerLogin();
-        if (data != null)
-        {
-            emailField.text = data.email;
-            passwordField.text = data.password;
-            autoLoadingPanel.SetActive(true);
-            StartCoroutine(GetVersion());            
-        }              
+    {
+        StartCoroutine(GetVersion());                      
     }
 
     //Checking the current version of the game, whether it is the latest version
@@ -60,8 +53,15 @@ public class Login : MonoBehaviour
                     updateCanvas.SetActive(true);
                     yield break;
                 }
-                //yield return StartCoroutine(WaitTime());
-                CallLogin();
+                PlayerData data = SavePlayerData.LoadPlayerLogin();
+                if (data != null)
+                {
+                    emailField.text = data.email;
+                    passwordField.text = data.password;
+                    autoLoadingPanel.SetActive(true);
+                    CallLogin();
+                }
+                //yield return StartCoroutine(WaitTime());                
             }
         }
     }
