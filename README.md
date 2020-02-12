@@ -7,21 +7,15 @@ Use unity version 2019.2.10f
 Required Assets
   Ink
 
-Worked on audio scripts but, Need some changes in the script(Audio restart problem)
 Require some kind of encryption for the login details save locally in the machine
 
-Most Important 
-  Need to design the database properly
-
 Need to do
-  Level display for each scenario - finished for one scenario  
-  Include preprocessor in ink scripts to change images, sounds,etc - finshed for levels 1,2 in scenario 1     
-  Need to write the intro text - still now
-  Have to gain some images for the gameplay 
-  Need to write intro about the scenario to display when clicking the scenario 
-  some kindof animation work for the story - finshed for levels 1,2 in scenario 1 
+  Level display for each scenario - finished for two scenario  
+  Need to write the intro text - still not
+  Have to gain some images for scenario 3,4 in the gameplay 
+  Need to write intro about the scenario to display when clicking the info button in scenario
   evalution part properly
   
 Should take care in Evaluation Views
-  have to add scenario 3, 4
+  have to add levels in scenario3,4
 
