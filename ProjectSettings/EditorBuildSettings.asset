@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Work.unity
     guid: 9a452c0366dd09044928b9ad45b07147
+  - enabled: 1
+    path: Assets/Scenes/Social.unity
+    guid: caa0c81d7455b85418a63dbeb68e239b
   m_configObjects: {}

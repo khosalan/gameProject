@@ -6769,16 +6769,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9a1c10ea03d81468faa27c997670db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameField: {fileID: 80758447}
-  emailField: {fileID: 728212090}
-  passwordField: {fileID: 758016352}
-  conPasswordField: {fileID: 442039243}
-  loginPanel: {fileID: 1354797544}
-  registerPanel: {fileID: 2063411398}
-  alertPanel: {fileID: 1340342470}
-  successPanel: {fileID: 1357468908}
-  registerButton: {fileID: 764916019}
-  alertText: {fileID: 394276678}
 --- !u!1 &2103572788
 GameObject:
   m_ObjectHideFlags: 0

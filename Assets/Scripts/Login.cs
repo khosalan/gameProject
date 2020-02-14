@@ -24,7 +24,7 @@ public class Login : MonoBehaviour
     [System.Obsolete]
     private void Start()
     {
-        StartCoroutine(GetVersion());                      
+        StartCoroutine(GetVersion());
     }
 
     //Checking the current version of the game, whether it is the latest version
@@ -72,7 +72,7 @@ public class Login : MonoBehaviour
         yield return new WaitForSeconds(1);
         CallLogin();
     }*/
-    
+
 
     [System.Obsolete]
     public void CallLogin()
@@ -87,17 +87,17 @@ public class Login : MonoBehaviour
     [System.Obsolete]
     IEnumerator GoLogin()
     {
-        WWWForm form = new WWWForm();        
+        WWWForm form = new WWWForm();
         form.AddField("email", emailField.text);
-        form.AddField("password", passwordField.text);        
+        form.AddField("password", passwordField.text);
 
         WWW www = new WWW("http://localhost/gameProjSample/login.php", form);
-        
+
         yield return www;
         loadingPanel.SetActive(false);
         autoLoadingPanel.SetActive(false);
 
-        if(www.error != null)
+        if (www.error != null)
         {
             FindObjectOfType<AudioManager>().Play("Alertbox");
             alertPanelText.text = "Please check your connection";
@@ -108,8 +108,10 @@ public class Login : MonoBehaviour
             if (www.text[0] == '0')
             {
                 SavePlayerData.SavePlayerLogin(this);
-                DBManager.userName = www.text.Split('\t')[1];
-                                
+                int.TryParse(www.text.Split('\t')[1], out int playerID);
+                DBManager.playerID = playerID;
+                DBManager.userName = www.text.Split('\t')[2];
+
                 SceneManager.LoadScene(1);
             }
             else
@@ -118,7 +120,7 @@ public class Login : MonoBehaviour
                 alertPanelText.text = www.text;
                 alertCanvas.SetActive(true);
             }
-        }        
+        }
 
     }
 
@@ -144,11 +146,11 @@ public class Login : MonoBehaviour
 
     public void PressExit()
     {
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-        #else
+#else
 		Application.Quit();
-        #endif
+#endif
     }
 
 }

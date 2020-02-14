@@ -2,8 +2,6 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.2.10f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
-    <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -54,6 +52,9 @@
     <UnityVersion>2019.2.10f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.2.10f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -62,68 +63,66 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AlertMessage.cs" />
-    <Compile Include="Assets\BackToMenu.cs" />
-    <Compile Include="Assets\ButtonSound.cs" />
-    <Compile Include="Assets\DialogView.cs" />
-    <Compile Include="Assets\GamePause.cs" />
-    <Compile Include="Assets\GameStoryManger.cs" />
-    <Compile Include="Assets\InkStoryManager.cs" />
-    <Compile Include="Assets\Intro.cs" />
-    <Compile Include="Assets\LevelPlayable.cs" />
-    <Compile Include="Assets\RetrieveRemarks.cs" />
-    <Compile Include="Assets\SceneSelection.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Audio\Sound.cs" />
     <Compile Include="Assets\Scripts\DBManager.cs" />
-    <Compile Include="Assets\Scripts\Evaluation.cs" />
-    <Compile Include="Assets\Scripts\EvaluationDisplay.cs" />
+    <Compile Include="Assets\Scripts\Game\AlertMessage.cs" />
+    <Compile Include="Assets\Scripts\Game\BackToMenu.cs" />
+    <Compile Include="Assets\Scripts\Game\ButtonSound.cs" />
+    <Compile Include="Assets\Scripts\Game\DialogView.cs" />
+    <Compile Include="Assets\Scripts\Game\GamePause.cs" />
+    <Compile Include="Assets\Scripts\Game\GameStoryManger.cs" />
+    <Compile Include="Assets\Scripts\Game\InkStoryManager.cs" />
+    <Compile Include="Assets\Scripts\Game\LevelPlayable.cs" />
+    <Compile Include="Assets\Scripts\Game\TextType.cs" />
     <Compile Include="Assets\Scripts\ImageZoom.cs" />
+    <Compile Include="Assets\Scripts\Intro.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
     <Compile Include="Assets\Scripts\Login.cs" />
     <Compile Include="Assets\Scripts\OptionMenu.cs" />
-    <Compile Include="Assets\Scripts\PlayerManager.cs" />
-    <Compile Include="Assets\Scripts\Profile.cs" />
-    <Compile Include="Assets\Scripts\Registration.cs" />
+    <Compile Include="Assets\Scripts\Profile\EvaluationDisplay.cs" />
+    <Compile Include="Assets\Scripts\Profile\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\Profile\Profile.cs" />
+    <Compile Include="Assets\Scripts\Profile\RetrieveRemarks.cs" />
+    <Compile Include="Assets\Scripts\Profile\ScenarioPercentage.cs" />
     <Compile Include="Assets\Scripts\Save\PlayerData.cs" />
     <Compile Include="Assets\Scripts\Save\SavePlayerData.cs" />
-    <Compile Include="Assets\Scripts\SaveEvaluation.cs" />
+    <Compile Include="Assets\Scripts\SceneSelection.cs" />
     <Compile Include="Assets\Scripts\StartMenu.cs" />
     <Compile Include="Assets\Scripts\TabSpace.cs" />
-    <Compile Include="Assets\TextType.cs" />
     <None Include="Assets\Fonts\KGFonts-TOU.txt" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>G:/unity/gamepro/24/gameProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/khosa/Desktop/Game project/gameProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>G:/unity/gamepro/24/gameProject/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/khosa/Desktop/Game project/gameProject/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>G:/unity/gamepro/24/gameProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/khosa/Desktop/Game project/gameProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>G:/unity/gamepro/24/gameProject/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/khosa/Desktop/Game project/gameProject/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>G:/unity/gamepro/24/gameProject/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/khosa/Desktop/Game project/gameProject/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>G:/unity/gamepro/24/gameProject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/khosa/Desktop/Game project/gameProject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>G:/unity/gamepro/24/gameProject/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/khosa/Desktop/Game project/gameProject/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>G:/unity/gamepro/24/gameProject/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/khosa/Desktop/Game project/gameProject/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>G:/unity/gamepro/24/gameProject/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/khosa/Desktop/Game project/gameProject/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>G:/unity/gamepro/24/gameProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/khosa/Desktop/Game project/gameProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>G:/unity/gamepro/24/gameProject/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/khosa/Desktop/Game project/gameProject/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
