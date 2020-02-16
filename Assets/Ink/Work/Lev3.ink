@@ -9,7 +9,8 @@ Now you have to decide,
 #background:eating
 You go out to a restaurant nearby and you have a lot of fun.
 *[Go home so that you can go home early]
-#you should go out with friends once in a while
+#background:remarkthink
+<<you should go out with friends once in a while......>>
 -
 ->conflictOne
 ->END
@@ -26,7 +27,8 @@ You have to decide,
 #background:funeral
 You and your frieds go to his house and talk to him. he thanks you for coming.
 *[Go to the movie]
-#you should not forget you old friends especially in hard times.
+#background:remarkthink
+<<you should not forget you old friends especially in their hard times......>>
 -
 ->trip
 ->END
@@ -37,7 +39,6 @@ About a month later on a coming long weekend some of your old school friends dec
 #background:happy
 Later your friends send you all the details about the trip. You get excited to meet your school friends because you haven’t seen some of them for a long time.
 *[Tell them that you have something with work]
-#You shpould not forget your old friends.
 ->END
 -
 #background:workplacetrip
@@ -47,7 +48,8 @@ They tell you about the trip they asked if you could come.
 #background:tellsituation
 After you tell them  the details they understand the situation.
 *[Bail on your school friends and join you work friends.]
-#you should not bail on your old friends for your new friends especially when they made plans earlier.
+#background:remarkthink
+<<you should not bail on your old friends for your new friends especially when they made plans earlier.....>>
 ->END
 -
 ->planning
@@ -57,8 +59,9 @@ After you tell them  the details they understand the situation.
 Before the trip you and friends started discussing the detail about the trip. You all started talking about what they could bring to the trip. Everyone agreed to bring something. You realize that you would need snacks for the way there. You have to decide 
 *[Tell them you’ll bring some snacks]
 They tell you its a god idea.
+#background:remarkok
+<<Good, it's better to contribute anything on a circumstance, where you are in...>> 
 *[Let someone else deal with it ]
-# good person will always contribute for outings with friends
 -
 #background:happy
 The week before the trip you decide to meet in the bus station in pettah in the morning. 
@@ -67,13 +70,15 @@ You tell about your parents about the trip. You father tell you that he can drop
 *[Tell him you can take a taxi]
 He says ok and tells you that he can now a rest a little bit longer.
 *[Tell him to drop you]
-#you should not bother your family when you have another alternative
+#background:remarkthink
+<<you should not bother your family when you have another alternative.....>>
 -
 #background:phone
 The day before the trip one of your friends tell you that he has no way to get to pettah and asks if he can join you. You have to tell him,
 *[He can join you]
 *[Tell him that you won’t be able to take him along]
-#a good person alwasy help his friends
+#background:remarkthink
+<<A good person alwasy help his friends....>>
 -
 ->ending
 ->END
@@ -83,7 +88,8 @@ The day of the trip came and you and your friends meet at the bus station in tim
 On the day that you’re supposed to return you find out that it’ll be very late when you reach Colombo. Now you have to decide on how you are going home from pettah. You have to decide,
 *[Get a taxi]
 *[Tell your father to come pick you up.]
-#you shouldn't have bothered your father 
+#background:remarkthink
+<<you shouldn't have bothered your father.....>> 
 -
 #background:tired
 You go home really tired and you immediately fall asleep.

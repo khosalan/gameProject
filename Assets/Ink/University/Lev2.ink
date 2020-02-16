@@ -12,14 +12,18 @@ One day your friends decide to go out after lectures and have some fun. They als
     You go out with your friends and have a good. Then they start to talk about the study session. They ask you if you have to time to join and teach them some topics that are hard for them. You have to decide,
         **[Help the with the studies]
         #background:teaching
-            After decision A you go to your friend’s house and teach then the topics they want. You realize that helping them also made some topics easier for you.
+            After decision, you go to your friend’s house and teach then the topics they want. You realize that helping them also made some topics easier for you.
             ->timeGoes
         **[Go home and study alone]
+        #background:remarkthink
+        << You should have helped them. It is good habit to share your knowledge with others and it will also help you gain knowledge. Thin about it .... >>
             ->timeGoes
-            #REMARK
+            
 *[Tell them that you have some family matter (go home and study alone)]
-    ->timeGoes
-    #remark
+#background:remarkthink
+<< Studying isn't everything, you should have some fun time with friends. You'll learn more things through the experiance of the life >>
+->timeGoes
+    
 
 === timeGoes
 #background:studyalone
@@ -30,9 +34,9 @@ Few days before an assignment a friend of yours asked for your help to resolve s
     #background:teaching
     You help your friend and both of you do well in the assignment.
 *[Tell him that you don't know that part]
-    #your friends are starting to notice that you are ditching
-    #background:university
-    The friendship is starting to deteriorate
+#background:remarkthink
+<< You should not lie to your friends. Your friends are starting to notice that you are ditching and the friendship is starting to deteriorate >>
+    
 -#background:university
 University life continues as usual you and your friends have fun.
 
@@ -42,8 +46,8 @@ A few days later lectures end early some of your friends along with some batch m
 *[Go out with your friends and have fun]
     ->goingOut
 *[Go to the library and study]
-    A balanced human needs friends not just educations.
--
+#background:remarkthink
+You should not focus on studying all the time. A balanced human needs friends not just only education. Think about it !!!
 ->END
 ===goingOut
 #background:theatre
@@ -60,18 +64,20 @@ You notice that one of your friends looks upset.Now you have to decide that you 
         #background:onetalkone
             He thanks you and joins the group
         **[Don’t lend him the money so that you can save up]
-            #background:sad
-            Your friends say he’s getting late and has to go home.
+        #background:sad
+        Your friends say he’s getting late and has to go home.
+        #background:remarkthink
+        << You should help your friends when they are in hard situation >>
+    
+        --
+        #background:fun
+        You have fun with your friends. You go home satisfied.
+*[Mind your own business]
+#background:remarkthink
+<< You should care about your friends a litte bit more. Not caring about your friends when they are in hard situation is a bad habit. Think about it !!! >>
 
-    --
-    #background:fun
-    You have fun with your friends. You go home satisfied.
+-->academicsContinue
 
-*Mind your own business
-#score reduction
--
-->academicsContinue
-->END
 ===academicsContinue
 #background:university
 University goes on normally everything fine you are doing well in academics.
@@ -84,14 +90,15 @@ Now you have to decide between
  
 *[Help your friend with the topic]
 *[Make some lie up and go home to study by yourself]
-    #background:sad
-    He messes up the assignment get stressed out.
+#background:remarkthink
+<< You should help your friend with their studies. It wil help them to pass the assignment as well as you gain more knowledge when teaching someone. Think about it ...>>
+#background:sad
+He messes up the assignment get stressed out.
 -
 #background:happy
 you do well in the assignment.
 ->cricketMatch
 
-->END
 ===cricketMatch
 #background:talk4
 University continues as usual. And exams are getting extremely close. 
@@ -104,6 +111,8 @@ Your friends have decided to enter a team into the tournament. Your friends asks
     #background:cricket
     You play in the tournament and have fun.
 *[Not play in the tournament study for the exam]
+#background:remarkthink
+<< Playing in the tournament would have been a fun time it would help you reduce stress >>
 -
 ->finale
 ===finale
@@ -111,7 +120,9 @@ Your friends have decided to enter a team into the tournament. Your friends asks
 A few days before the exam your friends ask you if you could come to the university on the days that you don’t have university so that you can help them with difficult parts of the subjects and study with them. Now you have to decide to
  
 *[Go help them]
+#background:remarkok
+Helping your freinds with their studies is a good habit and which will help them to pass their examination. Keep it up
 *[Study alone]
-#background:university
--The exams come and you do well. And the semester ends.
-->END
+#background:remarkthink
+Helping your friends in their studies would help your freinds to pass their examination and also result in you understanding the subjetcs a little bit better. Think about it and change your mindset.
+-->END

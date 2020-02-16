@@ -21,14 +21,19 @@ You remember that there were some lab sheets due next weekend and has to make th
     
     
 *[Ditch the meeting and go home to do the lab sheets]
+    #background:remarkthink
+    <<You  should have stayed for the meeting since there is plenty of time and you should get involved in extracurricular activities as well>>
     #background:labsheethome
     You go home and finish the lab sheet with plenty of time to spare. 
     #background:discussion
     The next day you go back to the university and meet your friends. They ask you why you didn't stay for the meeting. You have to decide on
     **[Tell the truth]
     **[Lie and tell them you had a family emergency]
+    #background:remarkthink
+    <<Lying is a very bad habit. Please be strong enough to tell the truth>>
     /* - or -- is called a gather it is used to combine both decisions and continue together*/
-    --After that you ask your friends what happened in the meeting.
+    --#background:discussion
+    After that you ask your friends what happened in the meeting.
     #background:musical
     They tell you that it was about musical event that the first years has to organize. They tell you how it is done as a fundraiser for a school rehabilitation program. 
     #background:discussion
@@ -40,13 +45,15 @@ You remember that there were some lab sheets due next weekend and has to make th
 
 ===takePart
  *[Take part in the event and manage your academic studies]
- *[Tell them no]
-    You have chosen not to take part in a extra curricular activity so. for a person to be well balanced they need studies and extra curricular activities.
-    ->DONE
--#background:planning
+ #background:planning
 Then the event planning starts and everything is going smoothly. You are managing you academics well and you’ve been doing the event management work put upon you very well.
-
 ->sceneTwo
+
+ *[Tell them no]
+ #background:remarkthink
+ You have chosen not to take part in extra curricular activities. So, for a person to be well balanced they need studies as well as extra curricular activities.Please think about it !
+ ->DONE
+
 
 ===sceneTwo
 #background:lecturersay
@@ -64,6 +71,8 @@ They also said that they’d prefer if you go and talk. Then you start thinking 
     You go to the company and manage to get a better sponsorship that you thought.
     #background:exam
 *[Send someone else to the company and you study for the assignment]
+#background:remarkthink
+<<You should have gone to the company as seniors prefered you to go and you are confident about the subject>>
     #background:sponsor
     The person you sent managed to get the sponsorship.
     #background:exam
@@ -79,10 +88,12 @@ A few days later there was a special meeting for the event organizers. And you a
 #background:doctor
 But you have to go home because you have to take your mother to the doctor because she has not been feeling well for a few days. 
 Now you have to decide 
-*	[Tell the seniors about the situation and go]
-    The seniors says its ok and go home.
-*	[Don’t tell the seniors and go home]
-    You should be responsible. Now your reputation among the seniors have gone down
+*[Tell the seniors about the situation and go]
+The seniors says its ok and go home.
+*[Don’t tell the seniors and go home]
+#background:remarkthink
+<<You should have informed the seniors about the situation because they were expecting you to stay. Due to this you are going to loose your reputation among the seniors>>
+    
 - ->sceneFour
 ===sceneFour
 #background:senior
@@ -93,33 +104,34 @@ The next day you go to the venue. The seniors put you in charge of the organizin
 #background:onetalkone
 A few moments later you notice that there is only one person at the ticket counter. You go find the other person who was in charge of the ticketing and ask him whats wrong. 
 He said that he’s feeling a bit under the whether and he went to get some medicine.Since you are incharge for today you have to decide
-* [Tell him to go back to his assigned work]
-    A good person should be a little bit more kind and should care about the people who work with you
-* [Send someone to the ticket counter and tell him to rest for a little while]
+*[Tell him to go back to his assigned work]
+#background:remarkthink
+<<A good person should be a little bit more kind and should care about the people who work with you>>
+*[Send someone to the ticket counter and tell him to rest for a little while]
+-
 #background:smallmeeting
--The event went well and the seniors thank you and all of your batchmates on a job well done.
+The event went well and the seniors thank you and all of your batchmates on a job well done.
 //(You are awarded a special award based on your past decisions)
 
 #background:travel
 After the event is over you are told that you can go home. You decide to take a cab home since you are tired from all the work. When you go out side the venue you see one of your batch mates looking worried. You have to decide
 
-*[Ask that person what’s wrong] 
-    Your go home feeling proud of what you and your batchmates did.
-    ->finale
+*[Ask that person what’s wrong]
+->finale
 *[Ignore and go home]
-    Your go home feeling proud of what you and your batchmates did.
-    ->END
+#background:remarkthink
+If your friends are in a trouble you should have ask them what went wrong and try to help them in hard situation. Think about it...
+->END
     
 ===finale
 #background:onetalkone
-He talled you that he doesn't know this area and how to get back to the hostle. 
+He talled you that he doesn't know this area and how to get back to the hostel. 
 The hostel is on the way to your house. You are thinking 
 *[Tell him the way to get the bus(so that you can peacefully go home because you are tired)]
-    Your go home feelin proud of what you and your batchmates did.
-    ->END
+#background:remarkthink
+You should have helped your friends when they are in trouble.  
+->END
 *[Give him a lift to the hostel in your cab]
-    You drop him at the hostel. 
-    You go home fealing tired but satisfied
-
-
+#background:remarkok
+It's always a good habit to help others when they are in a trouble. Keep it up.
 ->END

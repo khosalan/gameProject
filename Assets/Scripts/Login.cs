@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class Login : MonoBehaviour
+public class Login : MonoBehaviour//(MonoBehaviour)Its a class which provides entrymethods like Start(), Update()
 {
 
     public InputField emailField;
