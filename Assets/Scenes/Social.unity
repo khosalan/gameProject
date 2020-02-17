@@ -11237,7 +11237,7 @@ MonoBehaviour:
   dialogView: {fileID: 550675402}
   operation: 1
   currentLevel: 1
-  nextLevel: 2
+  nextLevel: 0
   remarks: 
   levelCanvas: {fileID: 2088125044}
   pauseButton: {fileID: 149400344}
@@ -17897,8 +17897,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b338a385274c1644a6a2a87330db360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenarioID: 2
-  currentScene: 4
+  scenarioID: 3
+  currentScene: 5
 --- !u!1001 &2115132348
 PrefabInstance:
   m_ObjectHideFlags: 0

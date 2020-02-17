@@ -15,8 +15,9 @@
  #background:7
 Few hours later he comes to your house and you notice that he seems upset due to the results. You two started talking about the results. Now you have to decide. 
 *[Talk about how excited you are about going to university]
+#remark:Don't celebrate your victory with the one who loose it
 #background:remarkthink
-<< You keep talking about your results ignoring him. He gets more upset. He says goodbye to you and leaves >>
+<< Don't celebrate your victory with the one who loose it >>
 *[Talk to your friends about his results]
 He says that he was expecting to get better results so that he would be able to attend the same university as you. 
 You tell him that results don't mean everythig and that he alwasy have another chance to do a level again and attend the university next year.
@@ -50,6 +51,9 @@ Unfortunately, it is on the same day as your friend’s birthday and he had invi
         #background:15
         If you choose to talk to him you find out that he doesn’t know how to find the bus stop. You tell him where to go and he thanks you.
         **[Ignore him and go home]
+        #remark:Ignoing a person when they are confused about a particular thing is bad, especially when you know them
+        #background:remarkthink
+        << Ignoing a person when they are confused about a particular thing is bad, especially when you know them >>
         --
         
 
@@ -60,7 +64,9 @@ A few days your friend calls you to ask you for some help with the studies. He s
 #background:17
 He comes to your house you help him with the topics and he thanks you.
 *[Tell him you don’t remember that topic]
-#You shouldnt have lied to your friend
+#remark:Don't tell that you don't know about a particular thing if you know about that
+#background:remarkthink
+Don't tell that you don't know about a particular thing if you know about that
 -
 #background:18
 Since university is getting closer and closer you decide to start learning small parts of what you will be learning there so it’ll be easier for you to understand. 
@@ -70,16 +76,24 @@ Now you have to decide,
 #background:19
 You meet a lot of your school friends and you have a lot of fun.
 *[Stay home so that you can get better prepared for the coming university life.]
-#Studies arent ypur life you need friemds too
+#remark:Studies aren't only your life you need friends too
+#background:remarkthink
+<< Studies aren't only your life you need friends too >>
 -
 #background:20
-A few days before university stats you went out running some errands.
+A few days before university starts you went out running some errands.
 #background:21
-When you return home you notice that there are some vissitors at your house. 
+When you return home you notice that there are some visitors at your house. 
 You have to choose,
 *[Talk to the visitors a bit and go to your room]
+#remark:Engaging with the vistors who came to our house is a good habit. Keep it up.
+#background:remarkok
+Engaging with the vistors who came to our house is a good habit. Keep it up.
 You talk to them for a little while and go to your room to rest.
 *[Ignore the vissitors and go to your room]
+#remark:Ingoring the vistors who come to our house is a very bad habit. Which shows that how unsocial you are. Think about it !
+#background:remarkthink
+Ingoring the vistors who come to our house is a very bad habit. Which shows that how unsocial you are. Think about it !
 #background:22
 You go to your room and rest.
 -
