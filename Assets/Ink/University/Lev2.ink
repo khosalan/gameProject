@@ -15,11 +15,13 @@ One day your friends decide to go out after lectures and have some fun. They als
             After decision, you go to your friend’s house and teach then the topics they want. You realize that helping them also made some topics easier for you.
             ->timeGoes
         **[Go home and study alone]
+        #remark:You should have helped them. It is good habit to share your knowledge with others and it will also help you gain knowledge....
         #background:remarkthink
-        << You should have helped them. It is good habit to share your knowledge with others and it will also help you gain knowledge. Thin about it .... >>
+        << You should have helped them. It is good habit to share your knowledge with others and it will also help you to gain knowledge....>>
             ->timeGoes
             
 *[Tell them that you have some family matter (go home and study alone)]
+#remark:Studying isn't everything, you should have some fun time with friends. You'll learn more things through the experiance of the life
 #background:remarkthink
 << Studying isn't everything, you should have some fun time with friends. You'll learn more things through the experiance of the life >>
 ->timeGoes
@@ -34,6 +36,7 @@ Few days before an assignment a friend of yours asked for your help to resolve s
     #background:teaching
     You help your friend and both of you do well in the assignment.
 *[Tell him that you don't know that part]
+#remark:You should not lie to your friends. Your friends are starting to notice that you are ditching and the friendship is starting to deteriorate
 #background:remarkthink
 << You should not lie to your friends. Your friends are starting to notice that you are ditching and the friendship is starting to deteriorate >>
     
@@ -66,6 +69,7 @@ You notice that one of your friends looks upset.Now you have to decide that you 
         **[Don’t lend him the money so that you can save up]
         #background:sad
         Your friends say he’s getting late and has to go home.
+        #remark:You should help your friends when they are in hard situation
         #background:remarkthink
         << You should help your friends when they are in hard situation >>
     
@@ -73,6 +77,7 @@ You notice that one of your friends looks upset.Now you have to decide that you 
         #background:fun
         You have fun with your friends. You go home satisfied.
 *[Mind your own business]
+#remark:You should care about your friends a litte bit more. Not caring about your friends when they are in hard situation is a bad habit. Think about it !!!
 #background:remarkthink
 << You should care about your friends a litte bit more. Not caring about your friends when they are in hard situation is a bad habit. Think about it !!! >>
 
@@ -90,6 +95,7 @@ Now you have to decide between
  
 *[Help your friend with the topic]
 *[Make some lie up and go home to study by yourself]
+#remark:You should help your friend with their studies. It wil help them to pass the assignment as well as you gain more knowledge when teaching someone. Think about it
 #background:remarkthink
 << You should help your friend with their studies. It wil help them to pass the assignment as well as you gain more knowledge when teaching someone. Think about it ...>>
 #background:sad
@@ -120,9 +126,11 @@ Your friends have decided to enter a team into the tournament. Your friends asks
 A few days before the exam your friends ask you if you could come to the university on the days that you don’t have university so that you can help them with difficult parts of the subjects and study with them. Now you have to decide to
  
 *[Go help them]
+#remark:Helping your freinds with their studies is a good habit and which will help them to pass their examination. Keep it up
 #background:remarkok
 Helping your freinds with their studies is a good habit and which will help them to pass their examination. Keep it up
 *[Study alone]
+#remark:Helping your friends in their studies would help your freinds to pass their examination and also result in you understanding the subjetcs a little bit better. Think about it and change your mindset.
 #background:remarkthink
-Helping your friends in their studies would help your freinds to pass their examination and also result in you understanding the subjetcs a little bit better. Think about it and change your mindset.
+<<Helping your friends in their studies would help your freinds to pass their examination and also result in you understanding the subjetcs a little bit better. Think about it and change your mindset.>>
 -->END

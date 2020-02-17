@@ -9,6 +9,7 @@ The batchmates decided to have a musical event. It is the event is to start in t
     #background:byetofrndz
     You get to say goodbye to his batchmates that he will not be able to see for a while.
 *[Go home early and rest]
+#remark:A balanced person should also enjoy themselves a bit.
 #background:remarkthink
 << A balanced person should also enjoy themselves a bit >>
 #background:waitingbus
@@ -20,6 +21,7 @@ A few minutes into the bus ride an elderly woman gets onto the bus. It seems she
 *[Stand up and give her a seat]
     She thanks you for the seat.
 *[Pretend to be asleep and not give her the seat]
+#remark:You should not be selfish. You should think about the older ones when they are in trouble.
 #background:remarkthink
 << You should not be selfish. You should think about the older ones when they are in trouble >>
 -
@@ -36,6 +38,7 @@ On the way home you see a dropped rs 1000 note on the side of the road. As you w
 He stops near you and asks if you have seen a 1000 rupee note he dropped earlier. You have to decide
 *[Give him the money]
 *[Say nothing and keep the money for yourself]
+#remark:The decision you took is bad you should not keep things that does not belong to you.
 #background:remarkthink
 << The decision you took is bad you should not keep things that does not belong to you. >>
 -
@@ -47,8 +50,9 @@ You realize that the suspicious looking man is a pickpocket and that he’s goin
 *[Say something and stop the man]
 The pickpocket is caught and is later then given to the police. All the people in the bus thanks you  for being such a good perosn.
 *[Mind you own business]
+#remark:You have nothing to loose by helping the man you should have done somehting.
 #background:remarkthink
-You have nothing to loose by helping the man you should have done somehting
+<<You have nothing to loose by helping the man you should have done somehting>>
 -
 You go to bambalapitiya and meet your friends.
 ->onTheWay
@@ -64,8 +68,9 @@ A friend of yours suggests that you should just cross the road from there.
 #background:police
 You cross from the place where you are and you almost get hit by a vehicle. And you get caught by a police officer for not obeying the rules. 
 The police officer writes a fine and tells you to you need to go to court and pay. You decide to go home after that shocking experience.
+#remark:Always you should have to obey the rules and regulations. Not obeying them causes alot of problems in the society. You have to change your mindset.
 #background:remarkthink
-Always you should have to obey the rules and regulations. Not obeying them causes alot of problems in the society. You have to change your mindset !
+<<Always you should have to obey the rules and regulations. Not obeying them causes alot of problems in the society. You have to change your mindset !>>
 ->END
 
 
@@ -77,6 +82,7 @@ You and your friends go to the restaurant safely and eat. You have fun. One of y
 He asks if you understand one of the topics. He asks if you could teach him the confusing parts when you have free time.Now you have to decide
 *[Help him with the work (because you know that topic well)]
 *[Tell him that you don’t know that either]
+#remark: A good person should always help their friends in their problems.
 #background:remarkthink
 << A good person should always help their friends in their problems >>
 -
@@ -111,10 +117,12 @@ It was on a day that you were planning to spend at home. Now you are thinking
 *[Go visit him]
 #background:goinghospital
 You go to the hospital and that you find out that he has been feeling better and that he will be allowed to go home soon.
+#remark:You are very much cared about your friends and you were able to sacrifice unwanted fun to them. Keep it up.
 #background:remarkok
 You are very much cared about your friends and you were able to sacrifice unwanted fun to them. Keep it up.
 ->END
 *[Stay at home]
+#remark:You should be helpful to your friends when they are having problems
 #background:remarkthink
 You should be helpful to your friends when they are having problems
 ->END

@@ -15,7 +15,8 @@
  #background:7
 Few hours later he comes to your house and you notice that he seems upset due to the results. You two started talking about the results. Now you have to decide. 
 *[Talk about how excited you are about going to university]
-#You keep talking about your resultws ignoring him. He gets more upset. He says goodby to you and leaves
+#background:remarkthink
+<< You keep talking about your results ignoring him. He gets more upset. He says goodbye to you and leaves >>
 *[Talk to your friends about his results]
 He says that he was expecting to get better results so that he would be able to attend the same university as you. 
 You tell him that results don't mean everythig and that he alwasy have another chance to do a level again and attend the university next year.

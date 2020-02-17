@@ -17,9 +17,11 @@ public class InkStoryManager : MonoBehaviour
 
     public UnityEngine.Events.UnityAction storyEndAction = delegate { };
 
-    public int operation;    
+    public int operation;
     public int currentLevel;
     public int nextLevel;
+
+    public string remarks = "";
 
     public GameObject levelCanvas;
     public GameObject pauseButton;
@@ -53,7 +55,8 @@ public class InkStoryManager : MonoBehaviour
         {
             pauseButton.SetActive(false);
             saveCanvas.SetActive(true);
-            StartCoroutine(GoRemarks(text));            
+            ProcessTags(story.currentTags);
+            StartCoroutine(GoRemarks(remarks));
         }
         else
         {
@@ -64,7 +67,7 @@ public class InkStoryManager : MonoBehaviour
         ProcessTags(story.currentTags);
         dialogView.DisplayPanel();
     }
-    
+
 
     IEnumerator GoRemarks(string text)
     {
@@ -87,17 +90,17 @@ public class InkStoryManager : MonoBehaviour
             Debug.Log("else");*/
         if (www.error != null)
         {
-            Debug.Log("Connection Error");            
+            Debug.Log("Connection Error");
             FindObjectOfType<AudioManager>().Play("Alertbox");
             alertCanvas.SetActive(true);
-            alertCanvas.GetComponent<AlertMessage>().remarks = text;            
+            alertCanvas.GetComponent<AlertMessage>().remarks = text;
         }
         else
         {
             saveCanvas.SetActive(false);
             dialogView.AddChoice("END", storyEndAction, TextAnchor.LowerRight);
         }
-        
+
     }
 
     public void Continue(int choiceIndex)
@@ -141,10 +144,10 @@ public class InkStoryManager : MonoBehaviour
 
     public void OnClickQuit()
     {
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-        #else
+#else
 		Application.Quit();
-        #endif
+#endif
     }
 }

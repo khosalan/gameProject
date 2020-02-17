@@ -8,8 +8,9 @@ You hear that they are looking for people for the party planning committee. Your
 *[Join the committee]
 ->partyPlanning
 *[Politely refuse the invitation]
+#remark:A balance person needs extra work as well as work, think about it.
 #background:remarkthink
-<<A balance person needs extra work as well as work, think about it...........>>
+<<A balance person needs extra work as well as work, think about it....>>
 
 ->END
 ===partyPlanning
@@ -21,8 +22,9 @@ Then the meeting ended and on the way home you think about whether or not to sta
 *[Stay in the committee]
 ->planningContinues
 *[Leave because you’ll have to stay late]
+#remark:Staying in the committee would've been a good expirience for you.
 #background:remarkthink
-<<staying in the committee would've been a good expirience for you.!>
+<<Staying in the committee would've been a good expirience for you.!>>
 
 ->END
 ===planningContinues
@@ -31,19 +33,20 @@ In the next meeting the committee discussed about the venue and theme of the par
 #background:talkcowo
 A few days later a coworker approached you during the lunch time he started asking about the Christmas party. He asked about the theme of the party.
 *[Tell him the theme and the venue]
+#remark:You shouldn't have told him because it was something that was trusted upon you by the team.
 #background:remarkthink
 <<You shouldn't have told him because it was something that was trusted upon you by the team......>>
 *[Tell him that it’s a secret and you’ll find out on the day like the rest of the office]
-#background:remarkok
-<<Good keep it up :)>>
+
 -
 #background:thinkalone
 Couple of days later you were asked to stay late for some matter regarding the party. 
 After work the committee head came to you and asked if you would be able to come on a Saturday to check if the venue is available. You have to decide 
 *[Tell him you are free]
 *[Tell him a lie about not being free]
+#remark:You should have gone with him because you took a responsibility when you joined the committee.
 #background:remarkthink
-<<you should have gone with him because you took a responsibility when you joined the committee...!>>
+<< You should have gone with him because you took a responsibility when you joined the committee...! >>
 -->supplies
 
 
@@ -55,8 +58,9 @@ One morning you were told to find a place to purchase some party supplies by the
 A few hours later you started to think if you would be able to use the party supplies as a cover up and go home early. So, you started thinking
 *[Stay and work]
 *[Lie and go home early]
+#remark:You shouldn't lie to get out of work....These decissions will lead you to some bad circumstances.
 #background:remarkthink
-<<You shouldn't lie to get out of work....These decisions will lead you to some bad circumstances...>>
+<< You shouldn't lie to get out of work....These decissions will lead you to some bad circumstances... >>
 -
 #background:meeting
 During the next meeting you told the heads about the party supply shop. Then they asked you if you would be able to handle the payments.
@@ -67,12 +71,14 @@ The next day you call your friend to discuss the prices. After work you go to hi
 #background:aboutbill
 You started to think about getting a bill with a higher amount so that you can keep some money for yourself.  Now you have to decide.
 *[Do it]
+#remark:You should not do forgery kind of thinks. It is very much illegal. You have to change your mindset.
 #background:remarkthink
-<<You are going mad with you work place>>
+<<You should not do forgery kind of thinks. It is very much illegal. You have to change your mindset.>>
+->END
 *[Don’t do it]
 -
 ->final
-->END
+
 ===final
 #background:commitee
 Work and party planning continue as usual. The committee decide to plan a secret Santa to cheer everyone up. 
@@ -82,6 +88,7 @@ During the lunch break names were given to everyone who they’re supposed to ge
 After the discussion, you started thinking about what you should buy as a gift. 
 You have to decide
 *[Buy him something cheap]
+#remark:The gift, you are going to give him should be memorable.
 #background:remarkthink
 <<The gift, you are going to give him should be memorable......>>
 *[Buy him something good]
@@ -98,6 +105,7 @@ You  go home and rest. You are happy about what you and the other committee meme
 *[Go with them]
 #background:fun
 You go to your friends house. You guys had fun  joking around. You had a lot of fun.
+#remark:Good, going well.
 #background:remarkok
 <<Good, going well....:)>>
 -

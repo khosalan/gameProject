@@ -15,8 +15,14 @@ public class GameStoryManger : MonoBehaviour
 
     private void Awake()
     {
-        inkStoryManager.AddTagProcessor("background", delegate (string value) {
+        inkStoryManager.AddTagProcessor("background", delegate (string value)
+        {
             SwitchToBackground(value);
+        });
+
+        inkStoryManager.AddTagProcessor("remark", delegate (string value)
+        {
+            AddRemarks(value);
         });
 
         inkStoryManager.storyEndAction = delegate
@@ -29,25 +35,29 @@ public class GameStoryManger : MonoBehaviour
     {
         dialogCanvas.SetActive(true);
         homeCanvas.SetActive(false);
-        inkStoryManager.StartStory();        
-        
+        inkStoryManager.StartStory();
+
     }
 
     public void BackToMenu()
     {
         SceneManager.LoadScene(levelCanvas.GetComponent<BackToMenu>().currentScene);
-        
+
     }
 
     void SwitchToBackground(string text)
     {
         int childCount = backgroundParent.transform.childCount;
         for (int i = childCount; i > 0; i--)
-        {            
+        {
             var background = backgroundParent.transform.GetChild(i - 1).gameObject;
             background.SetActive(background.name == text);
         }
     }
 
-    
+    void AddRemarks(string text)
+    {
+        inkStoryManager.remarks = inkStoryManager.remarks + text + "\n\n";
+        Debug.Log(inkStoryManager.remarks);
+    }
 }
