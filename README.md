@@ -10,13 +10,10 @@ Required Assets
 Require some kind of encryption for the login details save locally in the machine
 
 Need to do
-  Level display for each scenario - finished for two scenario  
   Need to write the intro text - still not
-  Have to gain some images for scenario 3,4 in the gameplay 
-  Need to write intro about the scenario to display when clicking the info button in scenario
-  evalution part properly
+  Have to gain some images for scenario 3 in the gameplay   
   
 Should take care in Evaluation Views
-  have to add levels in scenario3,4
+  have to add levels in scenario 3
   have to make some changes in remarks in each level in each scenario in ink
 
